@@ -29,19 +29,6 @@
     
     
     <entry>
-      <title></title>
-      <link href="/2023/11/17/2023-11-17%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
-      <url>/2023/11/17/2023-11-17%E5%B9%B6%E6%9F%A5%E9%9B%86/</url>
-      
-        <content type="html"><![CDATA[<h1 id="并查集"><a href="#并查集" class="headerlink" title="并查集"></a>并查集</h1>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>项目</title>
       <link href="/2023/11/12/2023-11-12-%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%9A%E5%8A%A1%E5%90%8E%E5%8F%B0%E7%B3%BB%E7%BB%9F%EF%BC%88%E5%90%88%E5%AE%B6%E4%BA%91%E7%A4%BE%E5%8C%BA%E7%89%A9%E4%B8%9A%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%EF%BC%89/"/>
       <url>/2023/11/12/2023-11-12-%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%9A%E5%8A%A1%E5%90%8E%E5%8F%B0%E7%B3%BB%E7%BB%9F%EF%BC%88%E5%90%88%E5%AE%B6%E4%BA%91%E7%A4%BE%E5%8C%BA%E7%89%A9%E4%B8%9A%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%EF%BC%89/</url>
@@ -76,64 +63,14 @@
       
       <categories>
           
-          <category> 背包问题 </category>
+          <category> 算法 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> -背包问题 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>数学建模</title>
-      <link href="/2023/09/24/2023-9-24%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
-      <url>/2023/09/24/2023-9-24%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> 数学建模 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> -数学建模 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>毛泽东思想</title>
-      <link href="/2023/09/24/2023-9-24%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%80%9D%E6%83%B3/"/>
-      <url>/2023/09/24/2023-9-24%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%80%9D%E6%83%B3/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> 毛概 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> -毛泽东思想 </tag>
+            <tag> -算法 </tag>
             
         </tags>
       
@@ -159,106 +96,6 @@
         <tags>
             
             <tag> -马克思主义基本原理 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>计算机组成原理</title>
-      <link href="/2023/09/20/2023-9-20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/"/>
-      <url>/2023/09/20/2023-9-20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</url>
-      
-        <content type="html"><![CDATA[<h1 id="计算机组成原理与系统结构"><a href="#计算机组成原理与系统结构" class="headerlink" title="计算机组成原理与系统结构"></a>计算机组成原理与系统结构</h1><h2 id="计算机的组成"><a href="#计算机的组成" class="headerlink" title="计算机的组成"></a>计算机的组成</h2><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230920210118179.png" alt="image-20230920210118179"></p><p>一个完整的计算机系统，包括两大部分，硬件系统和软件系统。</p><p>冯诺依曼体系结构</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230920210227520.png" alt="image-20230920210227520"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230920210244293.png" alt="image-20230920210244293"></p><h2 id="计算机硬件系统（五大部件）"><a href="#计算机硬件系统（五大部件）" class="headerlink" title="计算机硬件系统（五大部件）"></a>计算机硬件系统（五大部件）</h2><p>1、存储器</p><p>功能：存饭指令和数据</p><p>2、运算器</p><p>功能：在控制器控制下，进行算术运算和逻辑运算。</p><p>3、控制器</p><p>功能：对当前指令进行姨妈分析其所需要完成的操作，产生并发送各部件所需要的控制信号，从而使整个计算机自动，协调的工作</p><p>4、输入设备</p><p>5、输出设备</p><h2 id="计算机软件系统"><a href="#计算机软件系统" class="headerlink" title="计算机软件系统"></a>计算机软件系统</h2><p>1、系统软件</p><p>（1）操作系统：管理计算机系统的各种软件硬件资源，令其被高效使用。</p><p>操作系统是直接运行在逻辑上的最基本的系统软件，是系统软件的核心，任何其他软件必须在操作系统的支持下才能运行。</p><p>2、应用软件：又称应用程序。</p><h2 id="信息编码与数据表示"><a href="#信息编码与数据表示" class="headerlink" title="信息编码与数据表示"></a>信息编码与数据表示</h2><h3 id="进位计数制"><a href="#进位计数制" class="headerlink" title="进位计数制"></a>进位计数制</h3><p>数制的两大要素：</p><p>基数R：指在这种进位制中允许使用的基本数码个数。基数R的数制成为R进制数。</p><p>R进制数的主要特点就是逢R进1。</p><p>权Wi：权也称位权，指某一位i上的数码的权重值，即权与数码所处的位置i有关。Wi = Ri。</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230920214208223.png" alt="image-20230920214208223"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230920214238263.png" alt="image-20230920214238263"></p><h3 id="进制转换方法"><a href="#进制转换方法" class="headerlink" title="进制转换方法"></a>进制转换方法</h3><p>以十进制转换二进制为例：其他的都类似</p><p>十进制的整数部分：</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230920214520914.png" alt="image-20230920214520914"></p><p>十进制的小数部分：</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230920214920016.png" alt="image-20230920214920016"></p><p>0.6会一直循环下去所以保留四位小数的话：0.6的二进制数是0.1001</p><h3 id="原码表示法"><a href="#原码表示法" class="headerlink" title="原码表示法"></a>原码表示法</h3><p>原码分两部分：符号位和数值位</p><p>符号位：0表示正数，1表示负数</p><p>数值位：与绝对值相同</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230920215219176.png" alt="image-20230920215219176"></p><p><strong>特别注意在原码中0有正0和负0</strong></p><p>正0：0000    负0:1000</p><p>表示范围：</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230920215739869.png" alt="image-20230920215739869"></p><h3 id="补码表示法"><a href="#补码表示法" class="headerlink" title="补码表示法"></a>补码表示法</h3><p>最高位为符号位，其他位为数值位。</p><p>符号位也是0表示正数，1表示负数 </p><p>数值位：正数时，与绝对值相同；负数时，为绝对值后按位取反，末位加1.</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230920215629541.png" alt="image-20230920215629541"></p><p>补码中的0只有一个</p><p>计算机中的整形数据（int）都用补码来表示。</p><p>表示范围：</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230920215757703.png" alt="image-20230920215757703"></p><h3 id="反码表示法"><a href="#反码表示法" class="headerlink" title="反码表示法"></a>反码表示法</h3><p>最高位为符号位，其他位为数值位。</p><p>符号位也是0表示正数，1表示负数 </p><p>数值位：正数时，与绝对值相同；负数时，为绝对值取反。</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230920215904144.png" alt="image-20230920215904144"></p><p>反码的0 也有两个</p><p>正0：000</p><p>负0：111</p><p>数据范围：</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230920220023186.png" alt="image-20230920220023186"></p><h3 id="移码表示法"><a href="#移码表示法" class="headerlink" title="移码表示法"></a>移码表示法</h3><p>移码的符号位1表示正数，0表示负数</p><p>数值位：正数时，与绝对值相同，负数时，按位取反，末尾加一。</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230920220212715.png" alt="image-20230920220212715"></p><p>移码的0只有一个：1000</p><p>表示范围：</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230920220302077.png" alt="image-20230920220302077"></p><p>移码通常作为浮点数的阶码。</p><h3 id="浮点数机器数的格式"><a href="#浮点数机器数的格式" class="headerlink" title="浮点数机器数的格式"></a>浮点数机器数的格式</h3><p>浮点数表示中，数据分为两部分：尾数和阶码。</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230920220446017.png" alt="image-20230920220446017"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230920220543647.png" alt="image-20230920220543647"></p><h3 id="IEEE754"><a href="#IEEE754" class="headerlink" title="IEEE754"></a>IEEE754</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230920220714010.png" alt="image-20230920220714010"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 机组 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> -计算机组成原理 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>大学生如何写论文</title>
-      <link href="/2023/09/18/2023-9-18-%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%A6%82%E4%BD%95%E5%86%99%E8%AE%BA%E6%96%87/"/>
-      <url>/2023/09/18/2023-9-18-%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%A6%82%E4%BD%95%E5%86%99%E8%AE%BA%E6%96%87/</url>
-      
-        <content type="html"><![CDATA[<h1 id="论文"><a href="#论文" class="headerlink" title="论文"></a>论文</h1><h2 id="课程论文"><a href="#课程论文" class="headerlink" title="课程论文"></a>课程论文</h2><h3 id="1、论文标题"><a href="#1、论文标题" class="headerlink" title="1、论文标题"></a>1、论文标题</h3><p>指论文题目，撰写题目时，我们需要用最简洁明了，易搜索的文字对论文的内容进行提炼概述，使读者一眼看去就能了解论文在说什么问题。</p><h3 id="2、摘要"><a href="#2、摘要" class="headerlink" title="2、摘要"></a>2、摘要</h3><p>是对论文的基本内容，主要观点进行的简短的简练论述，摘要一般在200-300字左右，写作摘要的目的是使读者在阅读正文之前，就能对论文的基本内容，主要观点有所了解，然后决定是否进一步阅读，这部分内容非常关键，要避免背景介绍，研究意义等宏观内容的介绍，而应该将重点放在介绍论文的观点和结论上。</p><h3 id="3、引言"><a href="#3、引言" class="headerlink" title="3、引言"></a>3、引言</h3><p>北京介绍，研究意义等宏观内容的介绍</p><h3 id="4、关键词"><a href="#4、关键词" class="headerlink" title="4、关键词"></a>4、关键词</h3><p>是指3-5个最能支持全文核心内容的词，这些词在论文中出现的频率较高，与论文的观点，论据关联度很高，关键词必须是单词或术语，而不能是词组或短语。例如：如果有一篇文章叫《司马迁的人性观》，关键词中肯定有司马迁，人性观以及其他的词，但我们不能将司马迁的人性观作为关键词。关键词的作用一方面是为了方便他人检索，另一方面也是为了让读者对论文所涉及的最重要的内容有更清澈的把握。</p><h3 id="5、论文正文"><a href="#5、论文正文" class="headerlink" title="5、论文正文"></a>5、论文正文</h3><p>写前看相关论文，写小不写大，写会写的，写感兴趣的</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 论文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> -论文 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>大学物理</title>
-      <link href="/2023/09/18/2023-9-18%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%EF%BC%88%E4%B8%8B%EF%BC%89/"/>
-      <url>/2023/09/18/2023-9-18%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%EF%BC%88%E4%B8%8B%EF%BC%89/</url>
-      
-        <content type="html"><![CDATA[<h1 id="大学物理"><a href="#大学物理" class="headerlink" title="大学物理"></a>大学物理</h1><h2 id="电荷与电场"><a href="#电荷与电场" class="headerlink" title="电荷与电场"></a>电荷与电场</h2><p>1、同种电荷相互排斥，异种电荷相互吸引</p><p>2、电荷以一个基本单元的整数倍出现：e = 1.6 x 10^(-19)C</p><p>带电体所带电量只能是q = ne。</p><p>3、库仑定律：<img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230924164304914.png" alt="image-20230924164304914"></p><p>4、电场强度</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230924164353939.png" alt="image-20230924164353939"></p><p>点电荷的电场强度：</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230924164406246.png" alt="image-20230924164406246"></p><p>电荷密度：<img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230924164442182.png" alt="image-20230924164442182"></p><p>例题（带电棒）：</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230924164906025.png" alt="image-20230924164906025"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230924165114382.png" alt="image-20230924165114382"></p><p>记住一个公式：</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230924165241520.png" alt="image-20230924165241520"></p><p>例题（带电圆环）：</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230925084420240.png" alt="image-20230925084420240"></p><p>把圆环切割成无穷多份，而某一份的电场强度dE。</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230925084545691.png" alt="image-20230925084545691"></p><p>将dE分解两个方向：</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230925084639498.png" alt="image-20230925084639498"></p><p>垂直方向上由于对称性，所以场强为0。</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230925085209222.png" alt="image-20230925085209222"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230925085255810.png" alt="image-20230925085255810"></p><h2 id="电通量"><a href="#电通量" class="headerlink" title="电通量"></a>电通量</h2><p>1、电场线</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230925085930152.png" alt="image-20230925085930152"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230925090135153.png" alt="image-20230925090135153"></p><p>2、电通量：单位面积的电场强度</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230925090353897.png" alt="image-20230925090353897"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230925090657438.png" alt="image-20230925090657438"></p><p>例题：</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230925090907643.png" alt="image-20230925090907643"></p><p>在做这些题目之前，需要回顾一下二重积分的计算</p><h3 id="二重积分的计算"><a href="#二重积分的计算" class="headerlink" title="二重积分的计算"></a>二重积分的计算</h3><p>二重积分就是求体积</p><p>然后积分顺序又分为先y后x，和先x后y .</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20231003134255157.png" alt="image-20231003134255157"></p><h2 id="高斯定理"><a href="#高斯定理" class="headerlink" title="高斯定理"></a>高斯定理</h2><p>1、内容：闯过任意闭合曲面的电通量等于闭合曲面包围的电荷代数和除以一个常数。</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20231011205746451.png" alt="image-20231011205746451"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 物理 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> -大学物理 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>线性代数</title>
-      <link href="/2023/09/18/2023-9-18%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
-      <url>/2023/09/18/2023-9-18%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/</url>
-      
-        <content type="html"><![CDATA[<h1 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h1><h2 id="第一章行列式"><a href="#第一章行列式" class="headerlink" title="第一章行列式"></a>第一章行列式</h2><p>导入：解方程组</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230925171538310.png" alt="image-20230925171538310"></p><p>然后两式子相减就求出来了。</p><h3 id="二阶行列式：2行2列4个元素。"><a href="#二阶行列式：2行2列4个元素。" class="headerlink" title="二阶行列式：2行2列4个元素。"></a>二阶行列式：2行2列4个元素。</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230925171819266.png" alt="image-20230925171819266"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230925171829552.png" alt="image-20230925171829552"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230925171847754.png" alt="image-20230925171847754"></p><p>主对角线和次对角线。</p><h3 id="三阶行列式："><a href="#三阶行列式：" class="headerlink" title="三阶行列式："></a>三阶行列式：</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230925172253196.png" alt="image-20230925172253196"></p><p>排列：由1,2,3….n组成的一个有序数组就叫n级排列，中间不能缺数</p><p>n级排列    n!种可能</p><p>逆序：大的数排在小的数的前面。</p><p>逆序数：逆序的总数。</p><p>偶排列和奇排列</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230925173432144.png" alt="image-20230925173432144"></p><p>数逆序数：从第一个开始，数后面有几个比他小的</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230925173631297.png" alt="image-20230925173631297"></p><p>对换：交换两个数</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230925173939968.png" alt="image-20230925173939968"></p><p>一个对换，奇偶性改变一次</p><h3 id="n阶行列式"><a href="#n阶行列式" class="headerlink" title="n阶行列式"></a>n阶行列式</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230925180923517.png" alt="image-20230925180923517"></p><p>这是n阶行列式的定义</p><h2 id="1、线代运算（加法、乘法）"><a href="#1、线代运算（加法、乘法）" class="headerlink" title="1、线代运算（加法、乘法）"></a>1、线代运算（加法、乘法）</h2><p>加减法：对应相加</p><p>乘除法：行成列</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230924182659458.png" alt="image-20230924182659458"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230924182912424.png" alt="image-20230924182912424"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230924182920292.png" alt="image-20230924182920292"></p><p>乘法不满足交换律</p><h2 id="2、方阵的幂（找规律、硬算）"><a href="#2、方阵的幂（找规律、硬算）" class="headerlink" title="2、方阵的幂（找规律、硬算）"></a>2、方阵的幂（找规律、硬算）</h2><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230924183650030.png" alt="image-20230924183650030"></p><h2 id="3、矩阵的转置"><a href="#3、矩阵的转置" class="headerlink" title="3、矩阵的转置"></a>3、矩阵的转置</h2><p>矩阵的转置就是行变成列，列变成行</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20230924195614614.png" alt="image-20230924195614614"></p><p>例题1<img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20231007205130149.png" alt="image-20231007205130149"></p><p>对称矩阵</p><p>如果A矩阵和它的转置矩阵相等，就称作A为对称矩阵</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20231007205254508.png" alt="image-20231007205254508"></p><p>例题1<img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20231007205403994.png" alt="image-20231007205403994"></p><h2 id="4、行列式的定义"><a href="#4、行列式的定义" class="headerlink" title="4、行列式的定义"></a>4、行列式的定义</h2><p>二阶行列式</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20231007205653318.png" alt="image-20231007205653318"></p><p>解方程组</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20231007205825625.png" alt="image-20231007205825625"></p><p>三阶行列式</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20231007205859812.png" alt="image-20231007205859812"></p><p>解方程组</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20231007210146339.png" alt="image-20231007210146339"></p><h2 id="5、行列式性质"><a href="#5、行列式性质" class="headerlink" title="5、行列式性质"></a>5、行列式性质</h2><p>性质1 行列式的值肯定等于行列式的转置的值</p><p>性质2 交换行列式的两行（列），行列式变号</p><p>推论：若行列式有两行或者两列完全相同，行列式的值为0。</p><p>性质3：用乘行列式的某一行、列，可以把k提出来</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20231007210736765.png" alt="image-20231007210736765"></p><p>推论：行列式有两行或者列成比例，行列式的值为0.</p><p>性质4：通俗的说为行列式的数可以拆成两个行列式。<img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20231007210851852.png" alt="image-20231007210851852"></p><p>性质5：某一行或者列乘以k后加到另一行或者列上，行列式的值不变。</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20231007211027387.png" alt="image-20231007211027387"></p><h2 id="6、余子式和代数余子式"><a href="#6、余子式和代数余子式" class="headerlink" title="6、余子式和代数余子式"></a>6、余子式和代数余子式</h2><p>余子式就是划掉后剩下的就叫余子式。代数余子式就是将余子式乘（-1）的i+j次方就是代数余子式。</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20231007211711318.png" alt="image-20231007211711318"></p><h2 id="7、行列式按行列展开法则"><a href="#7、行列式按行列展开法则" class="headerlink" title="7、行列式按行列展开法则"></a>7、行列式按行列展开法则</h2><p>这个比较难懂，先看例子再说规则</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20231008141121788.png" alt="image-20231008141121788"></p><p>n阶行列式等于他的任意一行或者列和它的袋鼠余子式乘积之和，由于是代数余子式所以上面第一问的-1那里是 -  。</p><h2 id="8、降阶法计算行列式"><a href="#8、降阶法计算行列式" class="headerlink" title="8、降阶法计算行列式"></a>8、降阶法计算行列式</h2><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20231008142456748.png" alt="image-20231008142456748"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20231008143019974.png" alt="image-20231008143019974"></p><h2 id="9、方阵的行列式"><a href="#9、方阵的行列式" class="headerlink" title="9、方阵的行列式"></a>9、方阵的行列式</h2>]]></content>
-      
-      
-      <categories>
-          
-          <category> 线代 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> -线性代数 </tag>
             
         </tags>
       
@@ -351,7 +188,7 @@
       
       <categories>
           
-          <category> 使用教程 </category>
+          <category> GitHub </category>
           
       </categories>
       
