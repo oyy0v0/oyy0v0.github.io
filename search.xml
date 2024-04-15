@@ -79,31 +79,6 @@
     
     
     <entry>
-      <title>短连接生成</title>
-      <link href="/2024/01/25/2024-1-25-%E7%9F%AD%E8%BF%9E%E6%8E%A5%E7%94%9F%E6%88%90%E5%99%A8/"/>
-      <url>/2024/01/25/2024-1-25-%E7%9F%AD%E8%BF%9E%E6%8E%A5%E7%94%9F%E6%88%90%E5%99%A8/</url>
-      
-        <content type="html"><![CDATA[<h1 id="短连接生成"><a href="#短连接生成" class="headerlink" title="短连接生成"></a>短连接生成</h1><h2 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h2><p><strong>必选</strong><br>1、短链接生成并跳转<br>2、代码粘贴板<br>3、文件的上传并分享<br><strong>要求</strong><br>将这些题目整合成一个有机整体，作为一个项目开发出来短链接要求使用redis。</p><p>代码粘贴板可在线编辑，以及语法高亮。</p><p>文件可限时分享，逾期删除。</p><p>单人完成，语言不限，注释完全，要求有前端实现。上传github仓库。</p><p>也就是说首先是生成短连接，比如大学生在机房上写好了代码，然后要用u盘但回家那么就很麻烦。</p><p>所以就可以将写好的代码复制粘贴到代码粘贴板上，然后生成短连接，或者将代码文件上传到这个网站上还可以分享给别人。</p><h2 id="前端设计"><a href="#前端设计" class="headerlink" title="前端设计"></a>前端设计</h2><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240125194203673.png" alt="image-20240125194203673"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 项目 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> -项目 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>前端小记</title>
       <link href="/2023/12/18/2023-12-18-%E5%89%8D%E7%AB%AF%E5%B0%8F%E8%AE%B0/"/>
       <url>/2023/12/18/2023-12-18-%E5%89%8D%E7%AB%AF%E5%B0%8F%E8%AE%B0/</url>
@@ -196,31 +171,6 @@
         <tags>
             
             <tag> -算法 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>马克思主义基本原理</title>
-      <link href="/2023/09/24/2023-9-24%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/"/>
-      <url>/2023/09/24/2023-9-24%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/</url>
-      
-        <content type="html"><![CDATA[<h1 id="马克思主义基本原理"><a href="#马克思主义基本原理" class="headerlink" title="马克思主义基本原理"></a>马克思主义基本原理</h1><h2 id="马克思主义中国化时代化的科学内涵"><a href="#马克思主义中国化时代化的科学内涵" class="headerlink" title="马克思主义中国化时代化的科学内涵"></a>马克思主义中国化时代化的科学内涵</h2><p>WHAT：1、运用马克思主义的驻场、观点和方法，观察时代、把握时代、引领时代，解决中国革命、建设、改革中的实际问题。</p><p>2、总结和体谅中国革命、建设、改革的实践经验并将其上升为理论，不断丰富马克思主义的理论宝库，富裕马克思主义新的时代内涵。</p><p>3、运用中国人民喜闻乐见的民族语言来阐述马克思主义，时期植根于中国优秀传统文化的土壤之种田，具有中国特色、中国风格、中国气派。</p><p>4、推进马克思主义中国化时代化是一个追求真理，解释真理，笃行真理的过程。</p><p>HOW：5、准确把握马克思主义中国化时代化的科学内涵，要做到坚持和发展相统一。</p><h2 id="马克思主义中国化时代化理论成果及其关系"><a href="#马克思主义中国化时代化理论成果及其关系" class="headerlink" title="马克思主义中国化时代化理论成果及其关系"></a>马克思主义中国化时代化理论成果及其关系</h2><p>1、马克思主义中国化时代化的理论成果是一脉相承与时俱进的关系</p><p>2、中国特色社会主义理论体系在新的历史条件下 进一步丰富和发展了毛泽东思想。</p><p>3、毛泽东和思想和中国特色社会主义理论体系，都是马克思主义中国的运用和发展，都已独创性的理论成果丰富和发展了马克思主义的理论宝库。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 马原 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> -马克思主义基本原理 </tag>
             
         </tags>
       
@@ -670,11 +620,55 @@
     
     
     <entry>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/custom.css"/>
+      <url>/css/custom.css</url>
+      
+        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {  background: transparent !important;}#page-header {  background: transparent !important;}/* 白天模式遮罩透明 */#footer::before {  background: transparent !important;}#page-header::before {  background: transparent !important;}/* 夜间模式遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}/* 翻页按钮居中 */#pagination {  width: 100%;  margin: auto;}/* 背景宇宙星光  */#universe{  display: block;  position: fixed;  margin: 0;  padding: 0;  border: 0;  outline: 0;  left: 0;  top: 0;  width: 100%;  height: 100%;  pointer-events: none;  /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */  z-index: -1;}/* 侧边栏个人信息卡片动态渐变色 */#aside-content > .card-widget.card-info {  background: linear-gradient(    -45deg,    #e8d8b9,    #eccec5,    #a3e9eb,    #bdbdf0,    #eec1ea  );  box-shadow: 0 0 5px rgb(66, 68, 68);  position: relative;  background-size: 400% 400%;  -webkit-animation: Gradient 10s ease infinite;  -moz-animation: Gradient 10s ease infinite;  animation: Gradient 10s ease infinite !important;}@-webkit-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@-moz-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}/* 黑夜模式适配 */[data-theme="dark"] #aside-content > .card-widget.card-info {  background: #191919ee;}/* 个人信息Follow me按钮 */#aside-content > .card-widget.card-info > #card-info-btn {  background-color: #3eb8be;  border-radius: 8px;}/* 鼠标样式 */#cursor {  position: fixed;  width: 16px;  height: 16px;  /* 这里改变跟随的底色 */  background: rgb(57, 197, 187);  border-radius: 8px;  opacity: 0.25;  z-index: 10086;  pointer-events: none;  transition: 0.2s ease-in-out;  transition-property: background, opacity, transform;}#cursor.hidden {  opacity: 0;}#cursor.hover {  opacity: 0.1;  transform: scale(2.5);  -webkit-transform: scale(2.5);  -moz-transform: scale(2.5);  -ms-transform: scale(2.5);  -o-transform: scale(2.5);}#cursor.active {  opacity: 0.5;  transform: scale(0.5);  -webkit-transform: scale(0.5);  -moz-transform: scale(0.5);  -ms-transform: scale(0.5);  -o-transform: scale(0.5);}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/runtime.css"/>
+      <url>/css/runtime.css</url>
+      
+        <content type="html"><![CDATA[/*电子钟字体*/@font-face {  font-family: 'UnidreamLED';  src: url("https://cdn.jsdelivr.net/npm/akilar-candyassets/fonts/UnidreamLED.ttf");  font-display: swap;}div#runtime {  width: 180px;  margin: auto;  color: #fff;  padding-inline: 5px;  border-radius: 10px;  background-color: rgba(0,0,0,0.7);  font-family: 'UnidreamLED';}[data-theme="dark"] div#runtime {  color: #28b4c8;  box-shadow: 0 0 5px rgba(28,69,218,0.71);  animation: flashlight 1s linear infinite alternate;}/*悬停显示徽标提示语*/a.github-badge:hover:before {  position: fixed;  width: fit-content;  margin: auto;  left: 0;  right: 0;  top: 10%;  border-radius: 10px;  text-align: center;  z-index: 100;  content: attr(data-title);  font-size: 20px;  color: #fff;  padding: 10px;  background-color: var(--text-bg-hover);}[data-theme=dark] a.github-badge:hover:before {  background-color: rgba(18,18,18,0.8);}@-moz-keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}@-webkit-keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}@-o-keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}@keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>分类</title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/universe.css"/>
+      <url>/css/universe.css</url>
+      
+        <content type="html"><![CDATA[/* 背景宇宙星光  */#universe{    display: block;    position: fixed;    margin: 0;    padding: 0;    border: 0;    outline: 0;    left: 0;    top: 0;    width: 100%;    height: 100%;    pointer-events: none;    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */    z-index: -1;  }]]></content>
       
     </entry>
     
@@ -725,64 +719,20 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/custom.css"/>
-      <url>/css/custom.css</url>
-      
-        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {  background: transparent !important;}#page-header {  background: transparent !important;}/* 白天模式遮罩透明 */#footer::before {  background: transparent !important;}#page-header::before {  background: transparent !important;}/* 夜间模式遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}/* 翻页按钮居中 */#pagination {  width: 100%;  margin: auto;}/* 背景宇宙星光  */#universe{  display: block;  position: fixed;  margin: 0;  padding: 0;  border: 0;  outline: 0;  left: 0;  top: 0;  width: 100%;  height: 100%;  pointer-events: none;  /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */  z-index: -1;}/* 侧边栏个人信息卡片动态渐变色 */#aside-content > .card-widget.card-info {  background: linear-gradient(    -45deg,    #e8d8b9,    #eccec5,    #a3e9eb,    #bdbdf0,    #eec1ea  );  box-shadow: 0 0 5px rgb(66, 68, 68);  position: relative;  background-size: 400% 400%;  -webkit-animation: Gradient 10s ease infinite;  -moz-animation: Gradient 10s ease infinite;  animation: Gradient 10s ease infinite !important;}@-webkit-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@-moz-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}/* 黑夜模式适配 */[data-theme="dark"] #aside-content > .card-widget.card-info {  background: #191919ee;}/* 个人信息Follow me按钮 */#aside-content > .card-widget.card-info > #card-info-btn {  background-color: #3eb8be;  border-radius: 8px;}/* 鼠标样式 */#cursor {  position: fixed;  width: 16px;  height: 16px;  /* 这里改变跟随的底色 */  background: rgb(57, 197, 187);  border-radius: 8px;  opacity: 0.25;  z-index: 10086;  pointer-events: none;  transition: 0.2s ease-in-out;  transition-property: background, opacity, transform;}#cursor.hidden {  opacity: 0;}#cursor.hover {  opacity: 0.1;  transform: scale(2.5);  -webkit-transform: scale(2.5);  -moz-transform: scale(2.5);  -ms-transform: scale(2.5);  -o-transform: scale(2.5);}#cursor.active {  opacity: 0.5;  transform: scale(0.5);  -webkit-transform: scale(0.5);  -moz-transform: scale(0.5);  -ms-transform: scale(0.5);  -o-transform: scale(0.5);}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/runtime.css"/>
-      <url>/css/runtime.css</url>
-      
-        <content type="html"><![CDATA[/*电子钟字体*/@font-face {  font-family: 'UnidreamLED';  src: url("https://cdn.jsdelivr.net/npm/akilar-candyassets/fonts/UnidreamLED.ttf");  font-display: swap;}div#runtime {  width: 180px;  margin: auto;  color: #fff;  padding-inline: 5px;  border-radius: 10px;  background-color: rgba(0,0,0,0.7);  font-family: 'UnidreamLED';}[data-theme="dark"] div#runtime {  color: #28b4c8;  box-shadow: 0 0 5px rgba(28,69,218,0.71);  animation: flashlight 1s linear infinite alternate;}/*悬停显示徽标提示语*/a.github-badge:hover:before {  position: fixed;  width: fit-content;  margin: auto;  left: 0;  right: 0;  top: 10%;  border-radius: 10px;  text-align: center;  z-index: 100;  content: attr(data-title);  font-size: 20px;  color: #fff;  padding: 10px;  background-color: var(--text-bg-hover);}[data-theme=dark] a.github-badge:hover:before {  background-color: rgba(18,18,18,0.8);}@-moz-keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}@-webkit-keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}@-o-keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}@keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/universe.css"/>
-      <url>/css/universe.css</url>
-      
-        <content type="html"><![CDATA[/* 背景宇宙星光  */#universe{    display: block;    position: fixed;    margin: 0;    padding: 0;    border: 0;    outline: 0;    left: 0;    top: 0;    width: 100%;    height: 100%;    pointer-events: none;    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */    z-index: -1;  }]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>友链</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>电影</title>
       <link href="/movies/index.html"/>
       <url>/movies/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -802,9 +752,9 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>友链</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
