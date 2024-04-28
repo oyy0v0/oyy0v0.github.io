@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Go语言</title>
+      <link href="/2024/04/28/2024-4-28-go%E8%AF%AD%E8%A8%80/"/>
+      <url>/2024/04/28/2024-4-28-go%E8%AF%AD%E8%A8%80/</url>
+      
+        <content type="html"><![CDATA[<h1 id="go语言"><a href="#go语言" class="headerlink" title="go语言"></a>go语言</h1><h2 id="为什么要学go语言，go语言优势"><a href="#为什么要学go语言，go语言优势" class="headerlink" title="为什么要学go语言，go语言优势"></a>为什么要学go语言，go语言优势</h2><p>1)能合理利用多核CPU的优势提升软件系统性能</p><p>2）复杂度低，维护成本低，简洁高效</p><p>3）c/c++运行速度快但是编译速度慢而且存在内存泄漏的一系列问题，go语言不会</p><h2 id="go语言吉祥物-金花鼠Gordon"><a href="#go语言吉祥物-金花鼠Gordon" class="headerlink" title="go语言吉祥物-金花鼠Gordon"></a>go语言吉祥物-金花鼠Gordon</h2><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240428230930233.png" alt="image-20240428230930233"></p><h2 id="开发工具一开始使用VSCode"><a href="#开发工具一开始使用VSCode" class="headerlink" title="开发工具一开始使用VSCode"></a>开发工具一开始使用VSCode</h2><p>1、VSCode</p><p>安装就不介绍了</p><p>2、使用VSCode</p><p>在盘符建立文件夹然后打开文件夹</p><p>3、创建go文件</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240428231535659.png" alt="image-20240428231535659"></p><p>在里面就能写代码了</p><p>4、开始编写代码</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240428231744246.png" alt="image-20240428231744246"></p><h3 id="开发环境搭建"><a href="#开发环境搭建" class="headerlink" title="开发环境搭建"></a>开发环境搭建</h3><p>1、搭建Go开发环境 - 安装和配置SDK</p><p>类似于java的JDK</p><p>SDK下载地址：Golang中文社区：</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240428232149752.png" alt="image-20240428232149752"></p><p>下载完后解压就能用了</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240428232542052.png" alt="image-20240428232542052"></p><p>整个目录就是SDK</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240428232824600.png" alt="image-20240428232824600"></p><h3 id="测试SDK是否搭建成功"><a href="#测试SDK是否搭建成功" class="headerlink" title="测试SDK是否搭建成功"></a>测试SDK是否搭建成功</h3><p>1、进入控制命令台</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240428232933204.png" alt="image-20240428232933204"></p><p>2、验证SDK环境安装成功</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240428233049189.png" alt="image-20240428233049189"></p><p>3、配置系统环境变量</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240428233338516.png" alt="image-20240428233338516"></p><p>4、验证配置成功</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240428233425746.png" alt="image-20240428233425746"></p><h2 id="第一段程序"><a href="#第一段程序" class="headerlink" title="第一段程序"></a>第一段程序</h2><p>1、go基本项目结构</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240428233617693.png" alt="image-20240428233617693"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240428233812176.png" alt="image-20240428233812176"></p><p>2、编写代码</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240428234106531.png" alt="image-20240428234106531"></p><p>3、要对源文件进行编译 go build     java中用的是javac</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240428234345080.png" alt="image-20240428234345080"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240428234419860.png" alt="image-20240428234419860"></p><p>4、执行操作</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240428234448168.png" alt="image-20240428234448168"></p><p>5、通过go run 可以直接进行编译并且执行</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240428234638739.png" alt="image-20240428234638739"></p><h3 id="go语言执行过程分析"><a href="#go语言执行过程分析" class="headerlink" title="go语言执行过程分析"></a>go语言执行过程分析</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240428234741849.png" alt="image-20240428234741849"></p><p>上述两种执行流程的方式的区别</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Go语言 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> -Go语言 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>操作系统</title>
       <link href="/2024/04/20/2024-4-20-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
       <url>/2024/04/20/2024-4-20-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</url>
@@ -703,28 +728,6 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/cursor.js"/>
-      <url>/js/cursor.js</url>
-      
-        <content type="html"><![CDATA[var CURSOR;Math.lerp = (a, b, n) => (1 - n) * a + n * b;const getStyle = (el, attr) => {    try {        return window.getComputedStyle            ? window.getComputedStyle(el)[attr]            : el.currentStyle[attr];    } catch (e) {}    return "";};class Cursor {    constructor() {        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    move(left, top) {        this.cursor.style["left"] = `${left}px`;        this.cursor.style["top"] = `${top}px`;    }    create() {        if (!this.cursor) {            this.cursor = document.createElement("div");            this.cursor.id = "cursor";            this.cursor.classList.add("hidden");            document.body.append(this.cursor);        }        var el = document.getElementsByTagName('*');        for (let i = 0; i < el.length; i++)            if (getStyle(el[i], "cursor") == "pointer")                this.pt.push(el[i].outerHTML);        document.body.appendChild((this.scr = document.createElement("style")));        // 这里改变鼠标指针的颜色 由svg生成        this.scr.innerHTML = `* {cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='8px' height='8px'><circle cx='4' cy='4' r='4' opacity='1.0' fill='rgb(57, 197, 187)'/></svg>") 4 4, auto}`;    }    refresh() {        this.scr.remove();        this.cursor.classList.remove("hover");        this.cursor.classList.remove("active");        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    init() {        document.onmouseover  = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.add("hover");        document.onmouseout   = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.remove("hover");        document.onmousemove  = e => {(this.pos.curr == null) && this.move(e.clientX - 8, e.clientY - 8); this.pos.curr = {x: e.clientX - 8, y: e.clientY - 8}; this.cursor.classList.remove("hidden");};        document.onmouseenter = e => this.cursor.classList.remove("hidden");        document.onmouseleave = e => this.cursor.classList.add("hidden");        document.onmousedown  = e => this.cursor.classList.add("active");        document.onmouseup    = e => this.cursor.classList.remove("active");    }    render() {        if (this.pos.prev) {            this.pos.prev.x = Math.lerp(this.pos.prev.x, this.pos.curr.x, 0.15);            this.pos.prev.y = Math.lerp(this.pos.prev.y, this.pos.curr.y, 0.15);            this.move(this.pos.prev.x, this.pos.prev.y);        } else {            this.pos.prev = this.pos.curr;        }        requestAnimationFrame(() => this.render());    }}(() => {    CURSOR = new Cursor();    // 需要重新获取列表时，使用 CURSOR.refresh()})();]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="/css/runtime.css"/>
       <url>/css/runtime.css</url>
@@ -748,10 +751,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/universe.js"/>
-      <url>/js/universe.js</url>
+      <link href="/js/cursor.js"/>
+      <url>/js/cursor.js</url>
       
-        <content type="html"><![CDATA[function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};dark()]]></content>
+        <content type="html"><![CDATA[var CURSOR;Math.lerp = (a, b, n) => (1 - n) * a + n * b;const getStyle = (el, attr) => {    try {        return window.getComputedStyle            ? window.getComputedStyle(el)[attr]            : el.currentStyle[attr];    } catch (e) {}    return "";};class Cursor {    constructor() {        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    move(left, top) {        this.cursor.style["left"] = `${left}px`;        this.cursor.style["top"] = `${top}px`;    }    create() {        if (!this.cursor) {            this.cursor = document.createElement("div");            this.cursor.id = "cursor";            this.cursor.classList.add("hidden");            document.body.append(this.cursor);        }        var el = document.getElementsByTagName('*');        for (let i = 0; i < el.length; i++)            if (getStyle(el[i], "cursor") == "pointer")                this.pt.push(el[i].outerHTML);        document.body.appendChild((this.scr = document.createElement("style")));        // 这里改变鼠标指针的颜色 由svg生成        this.scr.innerHTML = `* {cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='8px' height='8px'><circle cx='4' cy='4' r='4' opacity='1.0' fill='rgb(57, 197, 187)'/></svg>") 4 4, auto}`;    }    refresh() {        this.scr.remove();        this.cursor.classList.remove("hover");        this.cursor.classList.remove("active");        this.pos = {curr: null, prev: null};        this.pt = [];        this.create();        this.init();        this.render();    }    init() {        document.onmouseover  = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.add("hover");        document.onmouseout   = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.remove("hover");        document.onmousemove  = e => {(this.pos.curr == null) && this.move(e.clientX - 8, e.clientY - 8); this.pos.curr = {x: e.clientX - 8, y: e.clientY - 8}; this.cursor.classList.remove("hidden");};        document.onmouseenter = e => this.cursor.classList.remove("hidden");        document.onmouseleave = e => this.cursor.classList.add("hidden");        document.onmousedown  = e => this.cursor.classList.add("active");        document.onmouseup    = e => this.cursor.classList.remove("active");    }    render() {        if (this.pos.prev) {            this.pos.prev.x = Math.lerp(this.pos.prev.x, this.pos.curr.x, 0.15);            this.pos.prev.y = Math.lerp(this.pos.prev.y, this.pos.curr.y, 0.15);            this.move(this.pos.prev.x, this.pos.prev.y);        } else {            this.pos.prev = this.pos.curr;        }        requestAnimationFrame(() => this.render());    }}(() => {    CURSOR = new Cursor();    // 需要重新获取列表时，使用 CURSOR.refresh()})();]]></content>
       
     </entry>
     
@@ -769,9 +772,31 @@
     
     
     <entry>
+      <title></title>
+      <link href="/js/universe.js"/>
+      <url>/js/universe.js</url>
+      
+        <content type="html"><![CDATA[function dark() {window.requestAnimationFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.msRequestAnimationFrame;var n,e,i,h,t=.05,s=document.getElementById("universe"),o=!0,a="180,184,240",r="226,225,142",d="226,225,224",c=[];function f(){n=window.innerWidth,e=window.innerHeight,i=.216*n,s.setAttribute("width",n),s.setAttribute("height",e)}function u(){h.clearRect(0,0,n,e);for(var t=c.length,i=0;i<t;i++){var s=c[i];s.move(),s.fadeIn(),s.fadeOut(),s.draw()}}function y(){this.reset=function(){this.giant=m(3),this.comet=!this.giant&&!o&&m(10),this.x=l(0,n-10),this.y=l(0,e),this.r=l(1.1,2.6),this.dx=l(t,6*t)+(this.comet+1-1)*t*l(50,120)+2*t,this.dy=-l(t,6*t)-(this.comet+1-1)*t*l(50,120),this.fadingOut=null,this.fadingIn=!0,this.opacity=0,this.opacityTresh=l(.2,1-.4*(this.comet+1-1)),this.do=l(5e-4,.002)+.001*(this.comet+1-1)},this.fadeIn=function(){this.fadingIn&&(this.fadingIn=!(this.opacity>this.opacityTresh),this.opacity+=this.do)},this.fadeOut=function(){this.fadingOut&&(this.fadingOut=!(this.opacity<0),this.opacity-=this.do/2,(this.x>n||this.y<0)&&(this.fadingOut=!1,this.reset()))},this.draw=function(){if(h.beginPath(),this.giant)h.fillStyle="rgba("+a+","+this.opacity+")",h.arc(this.x,this.y,2,0,2*Math.PI,!1);else if(this.comet){h.fillStyle="rgba("+d+","+this.opacity+")",h.arc(this.x,this.y,1.5,0,2*Math.PI,!1);for(var t=0;t<30;t++)h.fillStyle="rgba("+d+","+(this.opacity-this.opacity/20*t)+")",h.rect(this.x-this.dx/4*t,this.y-this.dy/4*t-2,2,2),h.fill()}else h.fillStyle="rgba("+r+","+this.opacity+")",h.rect(this.x,this.y,this.r,this.r);h.closePath(),h.fill()},this.move=function(){this.x+=this.dx,this.y+=this.dy,!1===this.fadingOut&&this.reset(),(this.x>n-n/4||this.y<0)&&(this.fadingOut=!0)},setTimeout(function(){o=!1},50)}function m(t){return Math.floor(1e3*Math.random())+1<10*t}function l(t,i){return Math.random()*(i-t)+t}f(),window.addEventListener("resize",f,!1),function(){h=s.getContext("2d");for(var t=0;t<i;t++)c[t]=new y,c[t].reset();u()}(),function t(){document.getElementsByTagName('html')[0].getAttribute('data-theme')=='dark'&&u(),window.requestAnimationFrame(t)}()};dark()]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>友链</title>
       <link href="/link/index.html"/>
       <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -791,9 +816,9 @@
     
     
     <entry>
-      <title>电影</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -802,9 +827,9 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>电影</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
