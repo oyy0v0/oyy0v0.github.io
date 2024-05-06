@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2024/04/29/2024-4-29-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+      <url>/2024/04/29/2024-4-29-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</url>
+      
+        <content type="html"><![CDATA[<h1 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h1><h2 id="计算机网络的概念"><a href="#计算机网络的概念" class="headerlink" title="计算机网络的概念"></a>计算机网络的概念</h2><h3 id="什么是计算机网络"><a href="#什么是计算机网络" class="headerlink" title="什么是计算机网络"></a>什么是计算机网络</h3><p>计算机网络是一个将众多分散的、自治的计算机系统，通过通信设备与线路连接起来，由功能完善的软件实现资源共享和信息传递的系统</p><h3 id="计算机网络、互联网、互连网的区别"><a href="#计算机网络、互联网、互连网的区别" class="headerlink" title="计算机网络、互联网、互连网的区别"></a>计算机网络、互联网、互连网的区别</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240429155911201.png" alt="image-20240429155911201"></p><h4 id="计算机网络-1"><a href="#计算机网络-1" class="headerlink" title="计算机网络"></a>计算机网络</h4><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240429160030548.png" alt="image-20240429160030548"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240429161157584.png" alt="image-20240429161157584"></p><p>集线器不能完成网络冲突的问题，现在很少使用了</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240429161336459.png" alt="image-20240429161336459"></p><h4 id="互连网-internet"><a href="#互连网-internet" class="headerlink" title="互连网(internet)"></a>互连网(internet)</h4><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240429161452838.png" alt="image-20240429161452838"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240429161759649.png" alt="image-20240429161759649"></p><h4 id="互联网（Internet）"><a href="#互联网（Internet）" class="headerlink" title="互联网（Internet）"></a>互联网（Internet）</h4><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240429161952001.png" alt="image-20240429161952001"></p><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240429162130239.png" alt="image-20240429162130239"></p><h2 id="计算机网络的组成和功能"><a href="#计算机网络的组成和功能" class="headerlink" title="计算机网络的组成和功能"></a>计算机网络的组成和功能</h2><h3 id="组成"><a href="#组成" class="headerlink" title="组成"></a>组成</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240429162311027.png" alt="image-20240429162311027"></p><h3 id="硬件、软件、协议"><a href="#硬件、软件、协议" class="headerlink" title="硬件、软件、协议"></a>硬件、软件、协议</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240429162402119.png" alt="image-20240429162402119"></p><p>这些主机也可以成为端系统都是硬件</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240429162444604.png" alt="image-20240429162444604"></p><h3 id="网络适配器（网卡）"><a href="#网络适配器（网卡）" class="headerlink" title="网络适配器（网卡）"></a>网络适配器（网卡）</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240429164026283.png" alt="image-20240429164026283"></p><h3 id="从工作方式来看"><a href="#从工作方式来看" class="headerlink" title="从工作方式来看"></a>从工作方式来看</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240429165049515.png" alt="image-20240429165049515"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240429165254764.png" alt="image-20240429165254764"></p><p>交换服务就是对网络内部资源的动态配置，选择负载低的线路等分配方式</p><h3 id="从逻辑功能看"><a href="#从逻辑功能看" class="headerlink" title="从逻辑功能看"></a>从逻辑功能看</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240429165343507.png" alt="image-20240429165343507"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240429165431097.png" alt="image-20240429165431097"></p><h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240429165508882.png" alt="image-20240429165508882"></p><h2 id="电路交换、报文交换、分组交换"><a href="#电路交换、报文交换、分组交换" class="headerlink" title="电路交换、报文交换、分组交换"></a>电路交换、报文交换、分组交换</h2><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240429175723002.png" alt="image-20240429175723002"></p><h2 id="电路交换技术"><a href="#电路交换技术" class="headerlink" title="电路交换技术"></a>电路交换技术</h2><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240429175936426.png" alt="image-20240429175936426"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240429180028659.png" alt="image-20240429180028659"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240429180214852.png" alt="image-20240429180214852"></p><p>电路交换技术的优缺点</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240504194436171.png" alt="image-20240504194436171"></p><h2 id="电报网络（报文交换技术）"><a href="#电报网络（报文交换技术）" class="headerlink" title="电报网络（报文交换技术）"></a>电报网络（报文交换技术）</h2><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240504200558062.png" alt="image-20240504200558062"></p><p>报文交换技术的优缺点</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240504201219509.png" alt="image-20240504201219509"></p><h2 id="分组交换技术"><a href="#分组交换技术" class="headerlink" title="分组交换技术"></a>分组交换技术</h2><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240504233357689.png" alt="image-20240504233357689"></p><p>分组交换的优缺点</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240504235751461.png" alt="image-20240504235751461"></p><h2 id="三种交换技术的性能对比"><a href="#三种交换技术的性能对比" class="headerlink" title="三种交换技术的性能对比"></a>三种交换技术的性能对比</h2><h3 id="电路交换性能分析"><a href="#电路交换性能分析" class="headerlink" title="电路交换性能分析"></a>电路交换性能分析</h3><h2 id="第二章物理层"><a href="#第二章物理层" class="headerlink" title="第二章物理层"></a>第二章物理层</h2><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506212751169.png" alt="image-20240506212751169"></p><h3 id="物理层接口特性"><a href="#物理层接口特性" class="headerlink" title="物理层接口特性"></a>物理层接口特性</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506214834619.png" alt="image-20240506214834619"></p><h3 id="典型的数据通信模型"><a href="#典型的数据通信模型" class="headerlink" title="典型的数据通信模型"></a>典型的数据通信模型</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506215056000.png" alt="image-20240506215056000"></p><h3 id="数据通信的相关术语"><a href="#数据通信的相关术语" class="headerlink" title="数据通信的相关术语"></a>数据通信的相关术语</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506215341861.png" alt="image-20240506215341861"></p><h3 id="三种通信方式"><a href="#三种通信方式" class="headerlink" title="三种通信方式"></a>三种通信方式</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506220738392.png" alt="image-20240506220738392"></p><h3 id="串行传输，并行传输"><a href="#串行传输，并行传输" class="headerlink" title="串行传输，并行传输"></a>串行传输，并行传输</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506220853767.png" alt="image-20240506220853767"></p><h3 id="同步传输、异步传输"><a href="#同步传输、异步传输" class="headerlink" title="同步传输、异步传输"></a>同步传输、异步传输</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506221257884.png" alt="image-20240506221257884"></p><h3 id="码元"><a href="#码元" class="headerlink" title="码元"></a>码元</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506221907738.png" alt="image-20240506221907738"></p><h3 id="数据传输速率的两种表示方法"><a href="#数据传输速率的两种表示方法" class="headerlink" title="数据传输速率的两种表示方法"></a>数据传输速率的两种表示方法</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506222202721.png" alt="image-20240506222202721"></p><h3 id="练习题"><a href="#练习题" class="headerlink" title="练习题"></a>练习题</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506222348554.png" alt="image-20240506222348554"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506222516907.png" alt="image-20240506222516907"></p><h3 id="带宽"><a href="#带宽" class="headerlink" title="带宽"></a>带宽</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506223021822.png" alt="image-20240506223021822"></p><h3 id="奈氏准则和香农定理"><a href="#奈氏准则和香农定理" class="headerlink" title="奈氏准则和香农定理"></a>奈氏准则和香农定理</h3><p>失真</p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506223159372.png" alt="image-20240506223159372"></p><h3 id="失真的一种现象–-码间串扰"><a href="#失真的一种现象–-码间串扰" class="headerlink" title="失真的一种现象– 码间串扰"></a>失真的一种现象– 码间串扰</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506223352945.png" alt="image-20240506223352945"></p><h3 id="奈氏准则"><a href="#奈氏准则" class="headerlink" title="奈氏准则"></a>奈氏准则</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506223911209.png" alt="image-20240506223911209"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506224034762.png" alt="image-20240506224034762"></p><h3 id="香农定理"><a href="#香农定理" class="headerlink" title="香农定理"></a>香农定理</h3><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506224640582.png" alt="image-20240506224640582"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506224743804.png" alt="image-20240506224743804"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506224910039.png" alt="image-20240506224910039"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506230122260.png" alt="image-20240506230122260"></p><h3 id="编码-调制"><a href="#编码-调制" class="headerlink" title="编码 调制"></a>编码 调制</h3><h4 id="基带信号和宽带信号"><a href="#基带信号和宽带信号" class="headerlink" title="基带信号和宽带信号"></a>基带信号和宽带信号</h4><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506232017568.png" alt="image-20240506232017568"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506232505703.png" alt="image-20240506232505703"></p><h4 id="数字数据编码为数字信号"><a href="#数字数据编码为数字信号" class="headerlink" title="数字数据编码为数字信号"></a>数字数据编码为数字信号</h4><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506232709643.png" alt="image-20240506232709643"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506232738270.png" alt="image-20240506232738270"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506232853539.png" alt="image-20240506232853539"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506233148099.png" alt="image-20240506233148099"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506233439623.png" alt="image-20240506233439623"></p><p><img src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240506233630544.png" alt="image-20240506233630544"></p><h4 id="数字数据调制为模拟信号"><a href="#数字数据调制为模拟信号" class="headerlink" title="数字数据调制为模拟信号"></a>数字数据调制为模拟信号</h4>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Go语言</title>
       <link href="/2024/04/28/2024-4-28-go%E8%AF%AD%E8%A8%80/"/>
       <url>/2024/04/28/2024-4-28-go%E8%AF%AD%E8%A8%80/</url>
@@ -706,11 +719,11 @@
     
     
     <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title></title>
+      <link href="/css/universe.css"/>
+      <url>/css/universe.css</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[/* 背景宇宙星光  */#universe{    display: block;    position: fixed;    margin: 0;    padding: 0;    border: 0;    outline: 0;    left: 0;    top: 0;    width: 100%;    height: 100%;    pointer-events: none;    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */    z-index: -1;  }]]></content>
       
     </entry>
     
@@ -718,21 +731,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/runtime.js"/>
-      <url>/js/runtime.js</url>
+      <link href="/css/custom.css"/>
+      <url>/css/custom.css</url>
       
-        <content type="html"><![CDATA[var now=new Date;function createtime(){now.setTime(now.getTime()+1e3);var e=new Date("11/26/2022 00:00:00"),t=Math.trunc(234e8+(now-e)/1e3*17),a=(t/1496e5).toFixed(6),r=new Date("11/26/2022 00:00:00"),o=(now-r)/1e3/60/60/24,i=Math.floor(o),n=(now-r)/1e3/60/60-24*i,s=Math.floor(n);1==String(s).length&&(s="0"+s);var l=(now-r)/1e3/60-1440*i-60*s,g=Math.floor(l);1==String(g).length&&(g="0"+g);var d=(now-r)/1e3-86400*i-3600*s-60*g,c=Math.round(d);1==String(c).length&&(c="0"+c);let h="";h=s<18&&s>=9?`<img class='boardsign' src='https://img.shields.io/badge/F小屋-上班摸鱼中-6adea8?style=social&logo=cakephp' title='距离月入25k也就还差一个大佬带我~'><br> 本站居然运行了 ${i} 天 ${s} 小时 ${g} 分 ${c} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀 <br> 再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨ `:`<img class='boardsign' src='https://img.shields.io/badge/F小屋-打烊休息啦-6adea8?style=social&logo=coffeescript' title='下班了就该开开心心的玩耍，嘿嘿~'><br> 本站居然运行了 ${i} 天 ${s} 小时 ${g} 分 ${c} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀 <br> 再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨ `,document.getElementById("workboard")&&(document.getElementById("workboard").innerHTML=h)}setInterval((()=>{createtime()}),1e3);]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>友链</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {  background: transparent !important;}#page-header {  background: transparent !important;}/* 白天模式遮罩透明 */#footer::before {  background: transparent !important;}#page-header::before {  background: transparent !important;}/* 夜间模式遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}/* 翻页按钮居中 */#pagination {  width: 100%;  margin: auto;}/* 背景宇宙星光  */#universe{  display: block;  position: fixed;  margin: 0;  padding: 0;  border: 0;  outline: 0;  left: 0;  top: 0;  width: 100%;  height: 100%;  pointer-events: none;  /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */  z-index: -1;}/* 侧边栏个人信息卡片动态渐变色 */#aside-content > .card-widget.card-info {  background: linear-gradient(    -45deg,    #e8d8b9,    #eccec5,    #a3e9eb,    #bdbdf0,    #eec1ea  );  box-shadow: 0 0 5px rgb(66, 68, 68);  position: relative;  background-size: 400% 400%;  -webkit-animation: Gradient 10s ease infinite;  -moz-animation: Gradient 10s ease infinite;  animation: Gradient 10s ease infinite !important;}@-webkit-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@-moz-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}/* 黑夜模式适配 */[data-theme="dark"] #aside-content > .card-widget.card-info {  background: #191919ee;}/* 个人信息Follow me按钮 */#aside-content > .card-widget.card-info > #card-info-btn {  background-color: #3eb8be;  border-radius: 8px;}/* 鼠标样式 */#cursor {  position: fixed;  width: 16px;  height: 16px;  /* 这里改变跟随的底色 */  background: rgb(57, 197, 187);  border-radius: 8px;  opacity: 0.25;  z-index: 10086;  pointer-events: none;  transition: 0.2s ease-in-out;  transition-property: background, opacity, transform;}#cursor.hidden {  opacity: 0;}#cursor.hover {  opacity: 0.1;  transform: scale(2.5);  -webkit-transform: scale(2.5);  -moz-transform: scale(2.5);  -ms-transform: scale(2.5);  -o-transform: scale(2.5);}#cursor.active {  opacity: 0.5;  transform: scale(0.5);  -webkit-transform: scale(0.5);  -moz-transform: scale(0.5);  -ms-transform: scale(0.5);  -o-transform: scale(0.5);}]]></content>
       
     </entry>
     
@@ -773,41 +775,19 @@
     
     <entry>
       <title></title>
-      <link href="/css/custom.css"/>
-      <url>/css/custom.css</url>
+      <link href="/js/runtime.js"/>
+      <url>/js/runtime.js</url>
       
-        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {  background: transparent !important;}#page-header {  background: transparent !important;}/* 白天模式遮罩透明 */#footer::before {  background: transparent !important;}#page-header::before {  background: transparent !important;}/* 夜间模式遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}/* 翻页按钮居中 */#pagination {  width: 100%;  margin: auto;}/* 背景宇宙星光  */#universe{  display: block;  position: fixed;  margin: 0;  padding: 0;  border: 0;  outline: 0;  left: 0;  top: 0;  width: 100%;  height: 100%;  pointer-events: none;  /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */  z-index: -1;}/* 侧边栏个人信息卡片动态渐变色 */#aside-content > .card-widget.card-info {  background: linear-gradient(    -45deg,    #e8d8b9,    #eccec5,    #a3e9eb,    #bdbdf0,    #eec1ea  );  box-shadow: 0 0 5px rgb(66, 68, 68);  position: relative;  background-size: 400% 400%;  -webkit-animation: Gradient 10s ease infinite;  -moz-animation: Gradient 10s ease infinite;  animation: Gradient 10s ease infinite !important;}@-webkit-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@-moz-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}/* 黑夜模式适配 */[data-theme="dark"] #aside-content > .card-widget.card-info {  background: #191919ee;}/* 个人信息Follow me按钮 */#aside-content > .card-widget.card-info > #card-info-btn {  background-color: #3eb8be;  border-radius: 8px;}/* 鼠标样式 */#cursor {  position: fixed;  width: 16px;  height: 16px;  /* 这里改变跟随的底色 */  background: rgb(57, 197, 187);  border-radius: 8px;  opacity: 0.25;  z-index: 10086;  pointer-events: none;  transition: 0.2s ease-in-out;  transition-property: background, opacity, transform;}#cursor.hidden {  opacity: 0;}#cursor.hover {  opacity: 0.1;  transform: scale(2.5);  -webkit-transform: scale(2.5);  -moz-transform: scale(2.5);  -ms-transform: scale(2.5);  -o-transform: scale(2.5);}#cursor.active {  opacity: 0.5;  transform: scale(0.5);  -webkit-transform: scale(0.5);  -moz-transform: scale(0.5);  -ms-transform: scale(0.5);  -o-transform: scale(0.5);}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/universe.css"/>
-      <url>/css/universe.css</url>
-      
-        <content type="html"><![CDATA[/* 背景宇宙星光  */#universe{    display: block;    position: fixed;    margin: 0;    padding: 0;    border: 0;    outline: 0;    left: 0;    top: 0;    width: 100%;    height: 100%;    pointer-events: none;    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */    z-index: -1;  }]]></content>
+        <content type="html"><![CDATA[var now=new Date;function createtime(){now.setTime(now.getTime()+1e3);var e=new Date("11/26/2022 00:00:00"),t=Math.trunc(234e8+(now-e)/1e3*17),a=(t/1496e5).toFixed(6),r=new Date("11/26/2022 00:00:00"),o=(now-r)/1e3/60/60/24,i=Math.floor(o),n=(now-r)/1e3/60/60-24*i,s=Math.floor(n);1==String(s).length&&(s="0"+s);var l=(now-r)/1e3/60-1440*i-60*s,g=Math.floor(l);1==String(g).length&&(g="0"+g);var d=(now-r)/1e3-86400*i-3600*s-60*g,c=Math.round(d);1==String(c).length&&(c="0"+c);let h="";h=s<18&&s>=9?`<img class='boardsign' src='https://img.shields.io/badge/F小屋-上班摸鱼中-6adea8?style=social&logo=cakephp' title='距离月入25k也就还差一个大佬带我~'><br> 本站居然运行了 ${i} 天 ${s} 小时 ${g} 分 ${c} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀 <br> 再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨ `:`<img class='boardsign' src='https://img.shields.io/badge/F小屋-打烊休息啦-6adea8?style=social&logo=coffeescript' title='下班了就该开开心心的玩耍，嘿嘿~'><br> 本站居然运行了 ${i} 天 ${s} 小时 ${g} 分 ${c} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀 <br> 再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨ `,document.getElementById("workboard")&&(document.getElementById("workboard").innerHTML=h)}setInterval((()=>{createtime()}),1e3);]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title></title>
-      <link href="/css/runtime.css"/>
-      <url>/css/runtime.css</url>
-      
-        <content type="html"><![CDATA[/*电子钟字体*/@font-face {  font-family: 'UnidreamLED';  src: url("https://cdn.jsdelivr.net/npm/akilar-candyassets/fonts/UnidreamLED.ttf");  font-display: swap;}div#runtime {  width: 180px;  margin: auto;  color: #fff;  padding-inline: 5px;  border-radius: 10px;  background-color: rgba(0,0,0,0.7);  font-family: 'UnidreamLED';}[data-theme="dark"] div#runtime {  color: #28b4c8;  box-shadow: 0 0 5px rgba(28,69,218,0.71);  animation: flashlight 1s linear infinite alternate;}/*悬停显示徽标提示语*/a.github-badge:hover:before {  position: fixed;  width: fit-content;  margin: auto;  left: 0;  right: 0;  top: 10%;  border-radius: 10px;  text-align: center;  z-index: 100;  content: attr(data-title);  font-size: 20px;  color: #fff;  padding: 10px;  background-color: var(--text-bg-hover);}[data-theme=dark] a.github-badge:hover:before {  background-color: rgba(18,18,18,0.8);}@-moz-keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}@-webkit-keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}@-o-keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}@keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>电影</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
+      <title>友链</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -827,11 +807,44 @@
     
     
     <entry>
+      <title>电影</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>标签</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/runtime.css"/>
+      <url>/css/runtime.css</url>
+      
+        <content type="html"><![CDATA[/*电子钟字体*/@font-face {  font-family: 'UnidreamLED';  src: url("https://cdn.jsdelivr.net/npm/akilar-candyassets/fonts/UnidreamLED.ttf");  font-display: swap;}div#runtime {  width: 180px;  margin: auto;  color: #fff;  padding-inline: 5px;  border-radius: 10px;  background-color: rgba(0,0,0,0.7);  font-family: 'UnidreamLED';}[data-theme="dark"] div#runtime {  color: #28b4c8;  box-shadow: 0 0 5px rgba(28,69,218,0.71);  animation: flashlight 1s linear infinite alternate;}/*悬停显示徽标提示语*/a.github-badge:hover:before {  position: fixed;  width: fit-content;  margin: auto;  left: 0;  right: 0;  top: 10%;  border-radius: 10px;  text-align: center;  z-index: 100;  content: attr(data-title);  font-size: 20px;  color: #fff;  padding: 10px;  background-color: var(--text-bg-hover);}[data-theme=dark] a.github-badge:hover:before {  background-color: rgba(18,18,18,0.8);}@-moz-keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}@-webkit-keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}@-o-keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}@keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}]]></content>
       
     </entry>
     
