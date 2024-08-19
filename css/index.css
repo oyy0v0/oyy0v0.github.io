@@ -1488,7 +1488,7 @@ body {
   background: var(--global-bg);
   color: var(--font-color);
   font-size: var(--global-font-size);
-  font-family: -appie-system;
+  font-family: LOGO,-appie-system;
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
@@ -1773,7 +1773,7 @@ figure.highlight pre .javascript .function {
 #article-container pre,
 #article-container code {
   font-size: 14px;
-  font-family: consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', sans-serif !important;
+  font-family: consolas !important;
 }
 #article-container code {
   padding: 2px 4px;
