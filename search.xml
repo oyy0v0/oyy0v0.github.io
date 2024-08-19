@@ -2,6 +2,31 @@
 <search> 
   
   
+    
+    <entry>
+      <title>javase入门</title>
+      <link href="/2024/08/19/2022-11-26%20Helloworld/"/>
+      <url>/2024/08/19/2022-11-26%20Helloworld/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Helloworld"><a href="#Helloworld" class="headerlink" title="Helloworld"></a>Helloworld</h1><p><strong>用java写helloworld</strong></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test01</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;hello world&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> javase </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> -标签1 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
   
   
 </search>
