@@ -1,0 +1,442 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>oyy0v0😼 | oyy0v0😼</title><meta name="author" content="oyy0v0"><meta name="copyright" content="oyy0v0"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="八股文集合介绍一下TCP&#x2F;IP模型和OSI模型的区别OSI和TCP&#x2F;IP都是一个计算机进行通信的一种体系，而OSI模型师国际组织制定的一个标准体系，TCP&#x2F;IP是实际网络通信中的实际的体系结构。 OSI自底向上分为物理层、数据链路层、网络层、传输层、会话层、表示层和应用层。 TCP&#x2F;IP分四层，每个层负责特定的网络功能。 自底向上是网络接口层，这层对应OSI的数据链路层和物理层，，这层负责物理传输">
+<meta property="og:type" content="article">
+<meta property="og:title" content="oyy0v0😼">
+<meta property="og:url" content="https://oyy0v0.top/2025/06/18/2025-6-18%20%E5%85%AB%E8%82%A1%E6%96%87/index.html">
+<meta property="og:site_name" content="oyy0v0😼">
+<meta property="og:description" content="八股文集合介绍一下TCP&#x2F;IP模型和OSI模型的区别OSI和TCP&#x2F;IP都是一个计算机进行通信的一种体系，而OSI模型师国际组织制定的一个标准体系，TCP&#x2F;IP是实际网络通信中的实际的体系结构。 OSI自底向上分为物理层、数据链路层、网络层、传输层、会话层、表示层和应用层。 TCP&#x2F;IP分四层，每个层负责特定的网络功能。 自底向上是网络接口层，这层对应OSI的数据链路层和物理层，，这层负责物理传输">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/6.jpg">
+<meta property="article:published_time" content="2025-06-18T03:09:47.871Z">
+<meta property="article:modified_time" content="2025-06-20T02:07:57.697Z">
+<meta property="article:author" content="oyy0v0">
+<meta property="article:tag" content="java,oyy0v0,spring,springmvc,springboot,数据库,算法,前端">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/6.jpg"><link rel="shortcut icon" href="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/%E7%8C%AB.svg"><link rel="canonical" href="https://oyy0v0.top/2025/06/18/2025-6-18%20%E5%85%AB%E8%82%A1%E6%96%87/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体中文","cht_to_chs":"你已切换为简体中文","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-right"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'oyy0v0😼',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-06-20 10:07:57'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="/css/universe.css"><link rel="stylesheet" href="//at.alicdn.com/t/c/font_4658720_723un29n3vn.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/progress_bar.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/cat.css"><link rel="stylesheet" href="/css/readPercent.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css" /><link rel="stylesheet" href="https://www.fomal.cc/static/css/runtime.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/7.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">41</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">32</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw icon-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw icon-shijianzhou"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw icon-biaoqian"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw icon-fenlei"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw icon-guanyu"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/6.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="oyy0v0😼"><span class="site-name">oyy0v0😼</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw icon-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw icon-shijianzhou"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw icon-biaoqian"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw icon-fenlei"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw icon-guanyu"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">无题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-06-18T03:09:47.871Z" title="发表于 2025-06-18 11:09:47">2025-06-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-06-20T02:07:57.697Z" title="更新于 2025-06-20 10:07:57">2025-06-20</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>10分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="八股文集合"><a href="#八股文集合" class="headerlink" title="八股文集合"></a>八股文集合</h1><h2 id="介绍一下TCP-IP模型和OSI模型的区别"><a href="#介绍一下TCP-IP模型和OSI模型的区别" class="headerlink" title="介绍一下TCP/IP模型和OSI模型的区别"></a>介绍一下TCP/IP模型和OSI模型的区别</h2><p>OSI和TCP/IP都是一个计算机进行通信的一种体系，而OSI模型师国际组织制定的一个标准体系，TCP/IP是实际网络通信中的实际的体系结构。</p>
+<p>OSI自底向上分为物理层、数据链路层、网络层、传输层、会话层、表示层和应用层。</p>
+<p>TCP/IP分四层，每个层负责特定的网络功能。</p>
+<p>自底向上是网络接口层，这层对应OSI的数据链路层和物理层，，这层负责物理传输媒介的定义和管理，比如有线的以太网传输，无线的WIFI传输，此外，网络接口层还管理硬件地址（MAC地址）的管理。</p>
+<p>然后是网络层，这层对应OSI的网络层，主要协议是IP，他负责数据包的路由和转发，选择一个最佳路径来将数据包从源主机传送到目标主机。IP协议使用IP地址来进行逻辑地址寻址。</p>
+<p>传输层对应OSI的传输层，这层负责应用与应用间的数据传输。主要的传输协议是TCP和UDP。TCP提供可靠的数据传输，UDP提供不可靠的实时传输。</p>
+<p>应用层对应OSI的应用层、表示层和会话层，他用于网络上的各种应用提供服务，比如网页浏览，文件传输等。</p>
+<p>以上就是osi和tcp/ip的区别了。</p>
+<h2 id="从输入URL到页面展示到底发生了什么"><a href="#从输入URL到页面展示到底发生了什么" class="headerlink" title="从输入URL到页面展示到底发生了什么"></a>从输入URL到页面展示到底发生了什么</h2><p>个人版：</p>
+<p>首先是用户输入url当按下回车键的时候浏览器会先解析url</p>
+<p>把url分成</p>
+<p>1、协议：http还是https</p>
+<p>2、域名：类似于www.baidu.com</p>
+<p>3、端口：如果是http的话默认是80端口https默认是443端口</p>
+<p>4、路径：/index.html类似这种访问域名服务器下的哪个路径</p>
+<p>5、还有一些请求参数等类似于?id=1这种</p>
+<p>当解析完url之后再进行DNS解析，就是将域名转换成对应的ip地址就称为DNS解析了，转换的流程是先从浏览器中查看是否有之前的浏览缓存记录，如果浏览器中没有就从操作系统的host文件中查找，如果hosts文件也没有就从ISP的DNS服务器中查找域名对应的IP地址，就是中国移动那种运营商的DNS服务器中查找，如果还没有就从根DNS服务器中查找，直到找到对应的ip地址。找到对应的IP地址后客户端和服务器会开始建立三次握手根服务器建立tcp连接，客户端向服务端发送同步报文的信息，类似于跟服务器说我想跟你建立连接了，然后服务器向客户端发送确认收到连接信息的响应信息，然后客户端再向服务器发送我收到连接建立成功的信息了，</p>
+<ol>
+<li><strong>第一次握手</strong>：客户端发送 <code>SYN=1</code>，随机生成初始序号 <code>ISN=x</code>；</li>
+<li><strong>第二次握手</strong>：服务器确认 <code>SYN=1</code>，并回复 <code>SYN=1, ACK=1</code>，同时生成自己的 ISN=y；</li>
+<li><strong>第三次握手</strong>：客户端发送 <code>ACK=1</code>，确认服务器的 ISN=y+1。</li>
+</ol>
+<p>如果是https连接的话在建立完tcp连接后还需要</p>
+<ul>
+<li>开始进行 <strong>TLS/SSL 握手</strong>，包括：<ol>
+<li>客户端发送 <code>ClientHello</code>（支持的加密套件、协议版本等）</li>
+<li>服务器回应 <code>ServerHello</code> + 证书（包含公钥）</li>
+<li>双方协商密钥、验证身份、完成加密通道建立</li>
+<li>加密通道建立成功后，才开始发送加密的 HTTP 请求</li>
+</ol>
+</li>
+</ul>
+<p>然后这样tcp连接就建立成功了，tcp建立成功后，客户端会向服务器发送请求，包含请求头，请求体等信息，然后服务端就会响应信息，包含响应头，响应体，还有cookie等信息，然后连接保持的字段有个keep-alive这个字段来确认保持连接的状态，燃弧响应后浏览器会解析响应信息，会先解析HTML文件然后形成DOM树，然后再解析CSS文件生成CSSOM，最后将两个图层合并就形成一个好看的页面了，之后再解析JS文件，解析JS文件的过程中会导致页面的重排和重绘，也会有一些外部的资源文件的加载，异步的请求等。</p>
+<p>然后会连接可能保持也可能断开，如果数据传输完成了，断开的是四次挥手，客户端向服务器发送我要断开连接的消息，然后服务端向客户端发送我收到断开连接申请的信息，然后再发送我已经断开连接的信息，然后客户端向服务端发送我收到已经断开连接的信息了，以上就是所有。</p>
+<ul>
+<li>在 HTTP 请求结束后，如果设置了 <code>Connection: close</code>，则立即断开；</li>
+<li>如果是 <code>keep-alive</code>，则 TCP 连接暂时保留，等待下一次复用；</li>
+<li>如果一段时间没有新请求（例如服务器设置 idle=60s），连接会被关闭。</li>
+</ul>
+<h2 id="HTTP请求报文和响应报文是怎样的，有哪些常见的字段？"><a href="#HTTP请求报文和响应报文是怎样的，有哪些常见的字段？" class="headerlink" title="HTTP请求报文和响应报文是怎样的，有哪些常见的字段？"></a>HTTP请求报文和响应报文是怎样的，有哪些常见的字段？</h2><p>HTTP报文分为请求报文和响应报文。</p>
+<p>1、请求报文主要由请求行、请求头、空行和请求体构成</p>
+<p>请求行包括：</p>
+<p>方法：指定要执行的操作，如GET、POST、PUT、DELETE等</p>
+<p>资源路径：请求的资源的URI（统一资源标识符）</p>
+<p>HTTP版本：使用的HTTP协议版本如HTTP/1.1或HTTP/2.0</p>
+<p>请求头字段比较多，通常包含：</p>
+<p>Host：请求的服务器域名</p>
+<p>Accept: 客户端能够处理的媒体类型</p>
+<p>Accept-Encoding:客户端能够解码的内容编码</p>
+<p>Authorization:用于认证的凭证信息，比如token数据</p>
+<p>Content-Length:请求体长度</p>
+<p>Content-Type:请求体的媒体类型</p>
+<p>Cookie: 存储在客户端的cookie数据</p>
+<p>If-None-Match:资源的ETag值，用于缓存控制</p>
+<p>Connection:管理连接的选项比如keep-alive</p>
+<p>空行是请求头和请求体之间的空行，主要用于分隔请求头和请求体。请求体通常用于POST和PUT请求，包含发送给服务器的JSON数据。</p>
+<p>2、响应报文，HTTP响应报文是服务器向客户端返回的数据格式用于传达服务器对客户端请求的处理结果以及相关数据。通常包含状态行、响应头、空行、响应体。</p>
+<p>状态行：HTTP版本、状态码和状态消息比如HTTP/1.1 200 OK</p>
+<p>响应头也是以键值对的形式提供信息，一些常见的相应头包括</p>
+<p>Content-Type:指定相应主题的媒体类型</p>
+<p>Content-Length:指定响应主题的长度（字节数）。</p>
+<p>Server:指定服务器的信息</p>
+<p>Expires:响应的过期时间，之后内容被认为是过时的。</p>
+<p>Etag:响应体的实体标签，用于缓存和条件请求。</p>
+<p>Last-Modified:资源最后被修改的日期和时间。</p>
+<p>Location:在重定向时指定新的资源位置</p>
+<p>Set-Cookie:在响应中设置Cookie</p>
+<p>Access-Control-Allow-Origin:夸资源共享CORS策略，指定哪些域可以访问资源。</p>
+<p>空行是在响应头和响应体之间表示响应头结束。而响应体式服务端实际传输的数据，可以是文本、HTML页面、图片、视频等，也可能是空。</p>
+<h2 id="HTTP有哪些请求方式"><a href="#HTTP有哪些请求方式" class="headerlink" title="HTTP有哪些请求方式"></a>HTTP有哪些请求方式</h2><ol>
+<li><strong>GET</strong>：请求指定的资源。</li>
+<li><strong>POST</strong>：向指定资源提交数据进行处理请求（例如表单提交）。</li>
+<li><strong>PUT</strong>：更新指定资源。</li>
+<li><strong>DELETE</strong>：删除指定资源。</li>
+<li>HEAD：获取报文首部，不返回报文主体。</li>
+<li>OPTIONS：查询服务器支持的请求方法。</li>
+<li>PATCH：对资源进行部分更新。</li>
+</ol>
+<h2 id="GET请求和POST请求的区别"><a href="#GET请求和POST请求的区别" class="headerlink" title="GET请求和POST请求的区别"></a>GET请求和POST请求的区别</h2><ol>
+<li><strong>用途</strong>：GET请求通常用于获取数据，POST请求用于提交数据。</li>
+<li><strong>数据传输</strong>：GET请求将参数附加在URL之后，POST请求将数据放在请求体中。</li>
+<li><strong>安全性</strong>：GET请求由于参数暴露在URL中，安全性较低；POST请求参数不会暴露在URL中，相对更安全。</li>
+<li><strong>数据大小</strong>：GET请求受到URL长度限制，数据量有限；POST请求理论上没有大小限制。</li>
+<li><strong>幂等性</strong>：GET请求是幂等的，即多次执行相同的GET请求，资源的状态不会改变；POST请求不是幂等的，因为每次提交都可能改变资源状态。</li>
+<li><strong>缓存</strong>：GET请求可以被缓存，POST请求默认不会被缓存。</li>
+</ol>
+<h2 id="HTTP中常见的状态码有哪些"><a href="#HTTP中常见的状态码有哪些" class="headerlink" title="HTTP中常见的状态码有哪些"></a>HTTP中常见的状态码有哪些</h2><p>200 ：表示客户端请求成功</p>
+<p>201：创建了新资源</p>
+<p>204：无内容，服务器成功处理请求，但未返回任何内容</p>
+<p>301：永久重定向</p>
+<p>302：临时重定向</p>
+<p>304：请求的内容没有修改过，所以服务器返回响应时，不会返回网页内容，而是使用缓存。</p>
+<p>401：请求需要身份验证</p>
+<p>403：请求的对应资源禁止被访问</p>
+<p>404：服务器无法找到对应的资源</p>
+<p>500：服务器内部错误</p>
+<p>503：服务不可用</p>
+<h2 id="什么是强缓存和协商缓存"><a href="#什么是强缓存和协商缓存" class="headerlink" title="什么是强缓存和协商缓存"></a>什么是强缓存和协商缓存</h2><p>强缓存和协商缓存是HTTP缓存机制的两种类型，他们用于减少服务器的负担和提高网页加载速度。</p>
+<p>1、强缓存：客户端在没用向服务发送请求的情况下，直接从本地缓存中获取资源。</p>
+<p>Expires强缓存：这个是用于设置强缓存时间，此时间范围内，从内存中读取缓存并返回。但是因为Expires判断强缓存过期的机制是获取本地时间戳，与之前拿到的资源文件中的Expires字段的时间做比较来判断是否需要对服务器发起请求。这里有一个巨大的漏洞，如果我本地时间不准怎么办？所以目前已经被废弃了。</p>
+<p>Cachee-Control强缓存：目前使用的强缓存是通过HTTP响应头中的Cache-Control字段实现，通过max-age来告诉浏览器在指定时间内可以直接使用缓存数据，无需再次请求。</p>
+<p>2、协商缓存：当强缓存失效时，浏览器会发送请求到服务器，通过ETag或Last-Modified等HTTP响应头与服务器进行验证，以确定资源是否被修改。如果资源未修改，服务器服务器返回304 Not Modified状态码，告知浏览器使用本地缓存。如果资源已经修改，则返回新的资源，浏览器更新本地缓存。这种凡是需要与服务器通信，但可以确保用户总是获取最新的内容。</p>
+<p>如果是基于缓存的资源获取的话一个是基于Last-Modified一个是基于ETag。</p>
+<ol>
+<li>如果是基于Last-Modified的协商缓存，Last-Modified是资源的最后修改时间，服务器在响应头部中返回。当客户端读取到Last-modified的时候，会在下次的请求标头中携带一个字段If-Modified-Since,而这个请求头中的If-Modified-Since就是服务器第一次修改时候给他的时间服务器比较请求中的If-Modified-Since值与当前资源的Last-Modified值，如果比对的结果是没有变化，表示资源未发生变化，返回状态码304 Not Modified，如果比对的结果说资源已经更新了，就会给浏览器正常资源，返回200状态。</li>
+</ol>
+<p>但是这种协商缓存有两个缺点：</p>
+<ul>
+<li>因为是更改文件修改时间来判断的，所以在文件内容本身不修改的情况下，依然有可能更新文件修改时间（比如修改文件名再改回来），这样有可能文件内容明明没修改但是缓存依然失效了。</li>
+<li>当文件在极短时间内完成修改的时候（比如几百毫秒）。因为文件修改事件记录的最小单位是秒，所以，如果文件在几百毫秒内完成修改的话，文件修改时间不会改变，这样即使文件内容修改了，依然不会返回新的文件。</li>
+</ul>
+<ol>
+<li>基于ETag的协商缓存：将原先协商缓存的比较时间戳的形式修改成了比较文件指纹（根据文件内容计算出的唯一哈希值）</li>
+</ol>
+<ul>
+<li>ETag是服务器为资源生成的唯一标识符(文件指纹)，可以是根据文件内容计算出的哈希值，服务端将其和资源一起放回给客户端。</li>
+<li>客户端在请求头部的If-None-Match字段中携带上次响应的ETag值。</li>
+<li>服务器比较请求中的If-None-Match值与当前资源的ETag值，如果匹配，表示资源未发生变化，返回状态码 <code>304 Not Modified</code>。如果两个文件指纹不吻合，则说明文件被更改，那么将新的文件指纹重新存储到响应头的ETag中并返回给客户端</li>
+</ul>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20250620095824176.png" alt="image-20250620095824176"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://oyy0v0.top">oyy0v0</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://oyy0v0.top/2025/06/18/2025-6-18%20%E5%85%AB%E8%82%A1%E6%96%87/">https://oyy0v0.top/2025/06/18/2025-6-18%20%E5%85%AB%E8%82%A1%E6%96%87/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://oyy0v0.top" target="_blank">oyy0v0😼</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/6.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2025/03/11/2025-3-11%20%E7%AE%97%E6%B3%95%E9%97%AE%E9%A2%98%E5%90%88%E9%9B%86/" title="算法问题合集"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/17.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">算法问题合集</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/7.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">oyy0v0</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">41</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">32</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/oyy0v0"><i class="fab fa-github"></i><span>💕前往小家</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="/assets/QRCode.jpg" target="_blank" title="icon-weixin"><i class="微信" style="color: faa-tada;"></i></a><a class="social-icon" href="https://github.com/oyy0v0" target="_blank" title="icon-github"><i class="Github" style="color: faa-tade;"></i></a><a class="social-icon" href="mailto:2925886492@qq.com" target="_blank" title="icon-youxiang"><i class="QQ邮箱" style="color: faa-tada;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来来到我的博客</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%AB%E8%82%A1%E6%96%87%E9%9B%86%E5%90%88"><span class="toc-text">八股文集合</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8BTCP-IP%E6%A8%A1%E5%9E%8B%E5%92%8COSI%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">介绍一下TCP&#x2F;IP模型和OSI模型的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8E%E8%BE%93%E5%85%A5URL%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%B1%95%E7%A4%BA%E5%88%B0%E5%BA%95%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88"><span class="toc-text">从输入URL到页面展示到底发生了什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTTP%E8%AF%B7%E6%B1%82%E6%8A%A5%E6%96%87%E5%92%8C%E5%93%8D%E5%BA%94%E6%8A%A5%E6%96%87%E6%98%AF%E6%80%8E%E6%A0%B7%E7%9A%84%EF%BC%8C%E6%9C%89%E5%93%AA%E4%BA%9B%E5%B8%B8%E8%A7%81%E7%9A%84%E5%AD%97%E6%AE%B5%EF%BC%9F"><span class="toc-text">HTTP请求报文和响应报文是怎样的，有哪些常见的字段？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTTP%E6%9C%89%E5%93%AA%E4%BA%9B%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F"><span class="toc-text">HTTP有哪些请求方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GET%E8%AF%B7%E6%B1%82%E5%92%8CPOST%E8%AF%B7%E6%B1%82%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">GET请求和POST请求的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTTP%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84%E7%8A%B6%E6%80%81%E7%A0%81%E6%9C%89%E5%93%AA%E4%BA%9B"><span class="toc-text">HTTP中常见的状态码有哪些</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%BC%BA%E7%BC%93%E5%AD%98%E5%92%8C%E5%8D%8F%E5%95%86%E7%BC%93%E5%AD%98"><span class="toc-text">什么是强缓存和协商缓存</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2025 By oyy0v0</div><div class="footer_custom_text">I wish you to become your own sun, no need to rely on who's light.</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="/js/tw_cn.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.8/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(() => {
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.oyy0v0.top/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.oyy0v0.top/',
+      region: '',
+      onCommentLoaded: () => {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') setTimeout(init,0)
+    else getScript('https://cdn.jsdelivr.net/npm/twikoo@1.6.31/dist/twikoo.all.min.js').then(init)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script></div><canvas id="universe"></canvas><script defer src="/js/universe.js"></script><script defer src="/js/cursor.js"></script><script async src="//at.alicdn.com/t/c/font_4658720_723un29n3vn.js"></script><script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/js/cat.js"></script><script defer data-pjax src="/js/readPercent.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div><!-- hexo injector body_end start --><script data-pjax>
+    function butterfly_categories_card_injector_config(){
+      var parent_div_git = document.getElementById('recent-posts');
+      var item_html = '<style>li.categoryBar-list-item{width:32.3%;}.categoryBar-list{max-height: 190px;overflow:auto;}.categoryBar-list::-webkit-scrollbar{width:0!important}@media screen and (max-width: 650px){.categoryBar-list{max-height: 160px;}}</style><div class="recent-post-item" style="height:auto;width:100%;padding:0px;"><div id="categoryBar"><ul class="categoryBar-list"><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/18.jpg);"> <a class="categoryBar-list-link" href="categories/java入门/">java入门</a><span class="categoryBar-list-count">5</span><span class="categoryBar-list-descr">java入门</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/17.jpg);"> <a class="categoryBar-list-link" href="categories/博客/">博客</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">算法</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/15.jpg);"> <a class="categoryBar-list-link" href="categories/算法/">算法</a><span class="categoryBar-list-count">6</span><span class="categoryBar-list-descr">博客</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/14.jpg);"> <a class="categoryBar-list-link" href="categories/前端/">前端</a><span class="categoryBar-list-count">3</span><span class="categoryBar-list-descr">AI</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/13.jpg);"> <a class="categoryBar-list-link" href="categories/GitHub/">GitHub</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">前端</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/12.jpg);"> <a class="categoryBar-list-link" href="categories/AI/">AI</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">GitHub</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/11.jpg);"> <a class="categoryBar-list-link" href="categories/面试集合/">面试集合</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">java高级</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/10.jpg);"> <a class="categoryBar-list-link" href="categories/java高级/">java高级</a><span class="categoryBar-list-count">9</span><span class="categoryBar-list-descr">面试集合</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/2.jpg);"> <a class="categoryBar-list-link" href="categories/操作系统/">操作系统</a><span class="categoryBar-list-count">2</span><span class="categoryBar-list-descr">Go语言</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20.jpg);"> <a class="categoryBar-list-link" href="categories/计算机网络/">计算机网络</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">面试</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/21.jpg);"> <a class="categoryBar-list-link" href="categories/Go语言/">Go语言</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">操作系统</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/22.jpg);"> <a class="categoryBar-list-link" href="categories/面试/">面试</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">计算机网络</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/23.jpg);"> <a class="categoryBar-list-link" href="categories/java中级/">java中级</a><span class="categoryBar-list-count">5</span><span class="categoryBar-list-descr">java中级</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/9.jpg);"> <a class="categoryBar-list-link" href="categories/java踩坑/">java踩坑</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">java小记</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/3.jpg);"> <a class="categoryBar-list-link" href="categories/java思路/">java思路</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">java踩坑</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/23.jpg);"> <a class="categoryBar-list-link" href="categories/java小记/">java小记</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">java思路</span></li></ul></div></div>';
+      console.log('已挂载butterfly_categories_card')
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      }
+    if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    butterfly_categories_card_injector_config()
+    }
+  </script><script data-pjax>
+  function butterfly_clock_anzhiyu_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock_anzhiyu')
+    if(parent_div_git) {
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var qweather_key = '8b4e8faa226f49ff851d67d0354499b7';
+  var gaud_map_key = '85e43a6ba1ebb38fd12b0d8a886ecb9b';
+  var baidu_ak_key = 'undefined';
+  var flag = 0;
+  var clock_rectangle = '113.34532,23.15624';
+  var clock_default_rectangle_enable = 'false';
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  </script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script data-pjax src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js"></script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v6.2.0" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题版本Butterfly_v4.3.1" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" data-title="本站采用多线部署，主线路托管于Vercel" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&amp;logo=Vercel" alt=""/></a><a class="github-badge" target="_blank" href="https://dashboard.4everland.org/" style="margin-inline:5px" data-title="本站采用多线部署，备用线路托管于4EVERLAND" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-4EVERLAND-22DDDD?style=flat&amp;logo=IPFS" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="/js/runtime.js"></script><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/09/01/2024-9-1 Docker基础/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231208202901.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-09-01</span><a class="blog-slider__title" href="2024/09/01/2024-9-1 Docker基础/" alt="">Docker</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/09/01/2024-9-1 Docker基础/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/08/29/2024-8-29 Solr/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/12.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-08-29</span><a class="blog-slider__title" href="2024/08/29/2024-8-29 Solr/" alt="">Solr</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/08/29/2024-8-29 Solr/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/08/24/2024-8-24 虚拟机VMware/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/5.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-08-24</span><a class="blog-slider__title" href="2024/08/24/2024-8-24 虚拟机VMware/" alt="">虚拟机</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/08/24/2024-8-24 虚拟机VMware/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/11/26/2024-11-26设计模式/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/18.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-11-26</span><a class="blog-slider__title" href="2024/11/26/2024-11-26设计模式/" alt="">设计模式</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/11/26/2024-11-26设计模式/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/11/26/2024-11-22 面试/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/2.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-11-26</span><a class="blog-slider__title" href="2024/11/26/2024-11-22 面试/" alt="">面试集合</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/11/26/2024-11-22 面试/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/03/11/2025-3-14 JSP/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/13.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-11</span><a class="blog-slider__title" href="2025/03/11/2025-3-14 JSP/" alt="">JSP</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/03/11/2025-3-14 JSP/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/03/11/2025-3-14 Servlet入门/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231208202901.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-11</span><a class="blog-slider__title" href="2025/03/11/2025-3-14 Servlet入门/" alt="">Servlet入门</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/03/11/2025-3-14 Servlet入门/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/03/11/2025-3-22 开发流程化/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/8.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-11</span><a class="blog-slider__title" href="2025/03/11/2025-3-22 开发流程化/" alt="">开发流程化</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/03/11/2025-3-22 开发流程化/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/03/11/2025-3-11 Maven实战/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/9.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-11</span><a class="blog-slider__title" href="2025/03/11/2025-3-11 Maven实战/" alt="">Maven</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/03/11/2025-3-11 Maven实战/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/03/11/2025-3-12 常用注解/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/8.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-11</span><a class="blog-slider__title" href="2025/03/11/2025-3-12 常用注解/" alt="">常用注解</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/03/11/2025-3-12 常用注解/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/03/11/2025-3-14  Servlet进阶/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/12.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-11</span><a class="blog-slider__title" href="2025/03/11/2025-3-14  Servlet进阶/" alt="">Servlet进阶</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/03/11/2025-3-14  Servlet进阶/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/08/07/2024-8-7 Springboot/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/22.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-08-07</span><a class="blog-slider__title" href="2024/08/07/2024-8-7 Springboot/" alt="">Springboot</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/08/07/2024-8-7 Springboot/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/08/07/2024-8-9 固定思路详解/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/23.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-08-07</span><a class="blog-slider__title" href="2024/08/07/2024-8-9 固定思路详解/" alt="">固定思路详解</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/08/07/2024-8-9 固定思路详解/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/08/07/2024-8-7 踩坑记录/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231208202901.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-08-07</span><a class="blog-slider__title" href="2024/08/07/2024-8-7 踩坑记录/" alt="">踩坑记录</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/08/07/2024-8-7 踩坑记录/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/08/23/2024-8-23 Nginx和lua和Openresty高性能实践/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/17.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-08-23</span><a class="blog-slider__title" href="2024/08/23/2024-8-23 Nginx和lua和Openresty高性能实践/" alt="">Nginx+lua+OpenResty高性能实践</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/08/23/2024-8-23 Nginx和lua和Openresty高性能实践/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/08/23/2024-8-23 redis/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/9.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-08-23</span><a class="blog-slider__title" href="2024/08/23/2024-8-23 redis/" alt="">redis</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/08/23/2024-8-23 redis/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/08/16/2024-8-16 前端速通/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/13.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-08-16</span><a class="blog-slider__title" href="2024/08/16/2024-8-16 前端速通/" alt="">前端速通</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/08/16/2024-8-16 前端速通/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/08/14/2024-8-14 RPC远程服务调用/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/3.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-08-14</span><a class="blog-slider__title" href="2024/08/14/2024-8-14 RPC远程服务调用/" alt="">RPC远程服务调用</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/08/14/2024-8-14 RPC远程服务调用/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/08/14/2024-8-14 Dubbo/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/2.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-08-14</span><a class="blog-slider__title" href="2024/08/14/2024-8-14 Dubbo/" alt="">Dubbo</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/08/14/2024-8-14 Dubbo/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/07/20/2024-7-20 Mybatis/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/13.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-07-20</span><a class="blog-slider__title" href="2024/07/20/2024-7-20 Mybatis/" alt="">Mybatis</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/07/20/2024-7-20 Mybatis/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/03/02/2025-3-2 链表/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/10.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-02</span><a class="blog-slider__title" href="2025/03/02/2025-3-2 链表/" alt="">链表</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/03/02/2025-3-2 链表/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/03/10/2025-3-9 队列和栈/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/9.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-10</span><a class="blog-slider__title" href="2025/03/10/2025-3-9 队列和栈/" alt="">队列和栈</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/03/10/2025-3-9 队列和栈/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/03/11/2025-3-11 算法问题合集/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/17.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-11</span><a class="blog-slider__title" href="2025/03/11/2025-3-11 算法问题合集/" alt="">算法问题合集</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/03/11/2025-3-11 算法问题合集/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/02/23/2025-2-23 数组和字符串（算法）/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/3.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-02-23</span><a class="blog-slider__title" href="2025/02/23/2025-2-23 数组和字符串（算法）/" alt="">数组和字符串（算法）</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/02/23/2025-2-23 数组和字符串（算法）/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/03/02/2025-2-25 java8新特性/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/13.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-02</span><a class="blog-slider__title" href="2025/03/02/2025-2-25 java8新特性/" alt="">java8新特性</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/03/02/2025-2-25 java8新特性/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/07/13/2024-7-2 Vue2/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/18.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-07-13</span><a class="blog-slider__title" href="2024/07/13/2024-7-2 Vue2/" alt="">Vue2</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/07/13/2024-7-2 Vue2/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/04/15/2024-4-6 面试题刷题/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/22.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-04-15</span><a class="blog-slider__title" href="2024/04/15/2024-4-6 面试题刷题/" alt="">面试刷题</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/04/15/2024-4-6 面试题刷题/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/04/28/2024-4-28 go语言/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/17.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-04-28</span><a class="blog-slider__title" href="2024/04/28/2024-4-28 go语言/" alt="">Go语言</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/04/28/2024-4-28 go语言/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/05/14/2024-4-29 计算机网络/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/23.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-05-14</span><a class="blog-slider__title" href="2024/05/14/2024-4-29 计算机网络/" alt="">计算机网络</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/05/14/2024-4-29 计算机网络/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/04/18/2024-4-20 操作系统/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/12.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-04-18</span><a class="blog-slider__title" href="2024/04/18/2024-4-20 操作系统/" alt="">操作系统</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/04/18/2024-4-20 操作系统/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/04/18/2024-4-18 JDBC/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/8.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-04-18</span><a class="blog-slider__title" href="2024/04/18/2024-4-18 JDBC/" alt="">JDBC</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/04/18/2024-4-18 JDBC/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/07/06/2023-7-1Java小记/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231208202901.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-07-06</span><a class="blog-slider__title" href="2023/07/06/2023-7-1Java小记/" alt="">Java小记</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2023/07/06/2023-7-1Java小记/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/04/15/2024-4-15 数据库/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/23.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-04-15</span><a class="blog-slider__title" href="2024/04/15/2024-4-15 数据库/" alt="">数据库</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/04/15/2024-4-15 数据库/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/08/15/2023-8-15 AI夏令营天气预报大赛/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/13.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-08-15</span><a class="blog-slider__title" href="2023/08/15/2023-8-15 AI夏令营天气预报大赛/" alt="">AI夏令营天气预报大赛</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2023/08/15/2023-8-15 AI夏令营天气预报大赛/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/06/23/2023-6-24Git和Github使用教程/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/6.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-06-23</span><a class="blog-slider__title" href="2023/06/23/2023-6-24Git和Github使用教程/" alt="">Git和Github使用教程</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2023/06/23/2023-6-24Git和Github使用教程/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/12/18/2023-12-18 前端小记/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/8.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-12-18</span><a class="blog-slider__title" href="2023/12/18/2023-12-18 前端小记/" alt="">前端小记</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2023/12/18/2023-12-18 前端小记/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/05/08/2023-5-8哈希表和有序表/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/21.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-05-08</span><a class="blog-slider__title" href="2023/05/08/2023-5-8哈希表和有序表/" alt="">哈希表和有序表</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2023/05/08/2023-5-8哈希表和有序表/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/08/15/2023-10-3背包问题/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/13.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-08-15</span><a class="blog-slider__title" href="2023/08/15/2023-10-3背包问题/" alt="">背包问题</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2023/08/15/2023-10-3背包问题/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/12/12/2023-12-11 建立博客保姆教程（1）/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/11.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-12-12</span><a class="blog-slider__title" href="2023/12/12/2023-12-11 建立博客保姆教程（1）/" alt="">建立博客</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2023/12/12/2023-12-11 建立博客保姆教程（1）/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2022/11/27/2022-11-27 枚举类/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/15.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-11-27</span><a class="blog-slider__title" href="2022/11/27/2022-11-27 枚举类/" alt="">javase入门（枚举1）</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2022/11/27/2022-11-27 枚举类/" alt="">详情   </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><script data-pjax src="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js"></script><script data-pjax>
+  function gitcalendar_injector_config(){
+      var parent_div_git = document.getElementById('gitZone');
+      var item_html = '<div class="recent-post-item" id="gitcalendarBar" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 280px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      console.log('已挂载gitcalendar')
+      }
+
+    if( document.getElementById('gitZone') && (location.pathname ==='/about/'|| '/about/' ==='all')){
+        gitcalendar_injector_config()
+        GitCalendarInit("https://github-api.oyy0v0.top//api?oyy0v0",['#d9e0df', '#c6e0dc', '#a8dcd4', '#9adcd2', '#89ded1', '#77e0d0', '#5fdecb', '#47dcc6', '#39dcc3', '#1fdabe', '#00dab9'],'oyy0v0')
+    }
+  </script><!-- hexo injector body_end end --></body></html>
