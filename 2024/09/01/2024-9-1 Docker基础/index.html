@@ -1,0 +1,1089 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Docker | oyy0v0😼</title><meta name="author" content="oyy0v0"><meta name="copyright" content="oyy0v0"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="知识分享">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Docker">
+<meta property="og:url" content="https://oyy0v0.top/2024/09/01/2024-9-1%20Docker%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:site_name" content="oyy0v0😼">
+<meta property="og:description" content="知识分享">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/4.jpg">
+<meta property="article:published_time" content="2024-08-31T16:40:00.000Z">
+<meta property="article:modified_time" content="2024-09-04T01:17:33.583Z">
+<meta property="article:author" content="oyy0v0">
+<meta property="article:tag" content="-Docker">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/4.jpg"><link rel="shortcut icon" href="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/%E7%8C%AB.svg"><link rel="canonical" href="https://oyy0v0.top/2024/09/01/2024-9-1%20Docker%E5%9F%BA%E7%A1%80/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体中文","cht_to_chs":"你已切换为简体中文","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-right"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Docker',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-09-04 09:17:33'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="/css/universe.css"><link rel="stylesheet" href="//at.alicdn.com/t/c/font_4658720_723un29n3vn.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/progress_bar.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/cat.css"><link rel="stylesheet" href="/css/readPercent.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css" /><link rel="stylesheet" href="https://www.fomal.cc/static/css/runtime.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/7.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">41</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">32</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw icon-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw icon-shijianzhou"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw icon-biaoqian"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw icon-fenlei"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw icon-guanyu"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/4.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="oyy0v0😼"><span class="site-name">oyy0v0😼</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw icon-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw icon-shijianzhou"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw icon-biaoqian"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw icon-fenlei"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw icon-guanyu"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Docker</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-31T16:40:00.000Z" title="发表于 2024-09-01 00:40:00">2024-09-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-09-04T01:17:33.583Z" title="更新于 2024-09-04 09:17:33">2024-09-04</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/java%E9%AB%98%E7%BA%A7/">java高级</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>29分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Docker"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h1><h2 id="1-Docker的介绍与安装"><a href="#1-Docker的介绍与安装" class="headerlink" title="1.Docker的介绍与安装"></a>1.Docker的介绍与安装</h2><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210929162812399.png" alt="image-20210929162812399"></p>
+<p>Docker是基于<strong>Go</strong>语言实现的云开源项目。<br>  Docker的主要目标是Build，Ship and Run Any App,Anywhere，也就是通过对应用组件的封装、分发、部署、运行等生命周期的管理，使用户的APP（可以是一个WEB应用或数据库应用等等）及其运行环境能够做到一次封装，到处运行。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322104549525.png" alt="image-20210322104549525"></p>
+<p> Linux 容器技术的出现就解决了这样一个问题，而 Docker 就是在它的基础上发展过来的。将应用运行在 Docker 容器上面，而 Docker 容器在任何操作系统上都是一致的，这就实现了跨平台、跨服务器。只需要一次配置好环境，换到别的机子上就可以一键部署好，大大简化了操作</p>
+<blockquote>
+<p>解决了运行环境和配置问题软件容器，方便做持续集成并有助于整体发布的容器虚拟化技术</p>
+</blockquote>
+<h3 id="1-2-Docker能干什么？"><a href="#1-2-Docker能干什么？" class="headerlink" title="1.2 Docker能干什么？"></a>1.2 Docker能干什么？</h3><h4 id="1-2-1以前的虚拟化技术"><a href="#1-2-1以前的虚拟化技术" class="headerlink" title="1.2.1以前的虚拟化技术"></a>1.2.1以前的虚拟化技术</h4><p>  虚拟机（virtual machine）就是带环境安装的一种解决方案。</p>
+<p>  它可以在一种操作系统里面运行另一种操作系统，比如在Windows 系统里面运行Linux 系统。应用程序对此毫无感知，因为虚拟机看上去跟真实系统一模一样，而对于底层系统来说，虚拟机就是一个普通文件，不需要了就删掉，对其他部分毫无影响。这类虚拟机完美的运行了另一套系统，能够使应用程序，操作系统和硬件三者之间的逻辑不变。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322104656645.png" alt="image-20210322104656645"></p>
+<p>虚拟机的缺点：</p>
+<ol>
+<li>资源占用多</li>
+<li>冗余步骤多</li>
+<li>启动慢</li>
+</ol>
+<h4 id="1-2-2-容器虚拟化技术"><a href="#1-2-2-容器虚拟化技术" class="headerlink" title="1.2.2 容器虚拟化技术"></a>1.2.2 容器虚拟化技术</h4><p>  由于前面虚拟机存在这些缺点，Linux 发展出了另一种虚拟化技术：Linux 容器（Linux Containers，缩写为 LXC）。<br>  Linux 容器不是模拟一个完整的操作系统，而是对进程进行隔离。有了容器，就可以将软件运行所需的所有资源打包到一个隔离的容器中。容器与虚拟机不同，不需要捆绑一整套操作系统，只需要软件工作所需的库资源和设置。系统因此而变得高效轻量并保证部署在任何环境中的软件都能始终如一地运行。<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322104735830.png" alt="image-20210322104735830"></p>
+<p>比较了 Docker 和传统虚拟化方式的不同之处：</p>
+<ol>
+<li>传统虚拟机技术是虚拟出一套硬件后，在其上运行一个完整操作系统，在该系统上再运行所需应用进程；</li>
+<li>而容器内的应用进程直接运行于宿主的内核，容器内没有自己的内核，而且也没有进行硬件虚拟。因此容器要比传统虚拟机更为轻便。</li>
+<li>每个容器之间互相隔离，每个容器有自己的文件系统 ，容器之间进程不会相互影响，能区分计算资源。</li>
+</ol>
+<h4 id="1-2-3-实际的运行"><a href="#1-2-3-实际的运行" class="headerlink" title="1.2.3 实际的运行"></a>1.2.3 实际的运行</h4><p>  Docker作为开发人员需要掌握，作为<code>运维人员</code>必须掌握。<br>一次构建，随处运行</p>
+<ol>
+<li>更快速的应用交付和部署</li>
+<li>更便捷的升级和扩缩容</li>
+<li>更简单的系统运维</li>
+<li>更高效的计算资源利用</li>
+</ol>
+<h3 id="1-3-相关资源"><a href="#1-3-相关资源" class="headerlink" title="1.3 相关资源"></a>1.3 相关资源</h3><p>官网: <a target="_blank" rel="noopener" href="http://www.docker.com">http://www.docker.com</a></p>
+<p>仓库: <a target="_blank" rel="noopener" href="https://hub.docker.com">https://hub.docker.com</a></p>
+<h3 id="1-4-Docker安装"><a href="#1-4-Docker安装" class="headerlink" title="1.4 Docker安装"></a>1.4 Docker安装</h3><h4 id="1-4-1-Docker安装的前提环境"><a href="#1-4-1-Docker安装的前提环境" class="headerlink" title="1.4.1 Docker安装的前提环境"></a>1.4.1 Docker安装的前提环境</h4><p>CentOS Docker 安装<br>Docker支持以下的CentOS版本：<br>CentOS 7 (64-bit) 8<br>CentOS 6.5 (64-bit) 或更高的版本</p>
+<p>前提条件<br>目前，CentOS 仅发行版本中的内核支持 Docker。<br>Docker 运行在 CentOS 7 上，要求系统为64位、系统内核版本为 3.10 以上。<br>Docker 运行在 CentOS-6.5 或更高的版本的 CentOS 上，要求系统为64位、系统内核版本为 2.6.32-431 或者更高版本。<br>查看自己的内核<br>uname命令用于打印当前系统相关信息（内核版本号、硬件架构、主机名称和操作系统类型等）。</p>
+<h4 id="1-4-2-Vagrant虚拟机环境"><a href="#1-4-2-Vagrant虚拟机环境" class="headerlink" title="1.4.2 Vagrant虚拟机环境"></a>1.4.2 Vagrant虚拟机环境</h4><p>&emsp;&emsp;Docker安装在虚拟机上，我们可以通过VMWare来安装，但是通过VMWare安装大家经常会碰到网络ip连接问题，为了减少额外的环境因素影响，Docker内容的讲解我们会通过VirtualBox结合Vagrant来安装虚拟机</p>
+<p>VirtualBox官网：<a target="_blank" rel="noopener" href="https://www.virtualbox.org/">https://www.virtualbox.org/</a></p>
+<p>Vagrant官网：<a target="_blank" rel="noopener" href="https://www.vagrantup.com/">https://www.vagrantup.com/</a></p>
+<p>Vagrant镜像仓库：<a target="_blank" rel="noopener" href="https://app.vagrantup.com/boxes/search">https://app.vagrantup.com/boxes/search</a></p>
+<p>安装VirtualBox和Vagrant，傻瓜式安装。安装完成后需要重启计算机。</p>
+<p>当然如果有VMware就不用安装了</p>
+<p>在cmd命令窗口输入<code>vagrant</code> 命令弹出如下内容表示 <code>vagrant</code> 安装成功</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210929192459715.png" alt="image-20210929192459715"></p>
+<p>通过Vagrant安装虚拟机：</p>
+<ul>
+<li>创建一个空的目录，cmd切换到该目录中，然后执行<code>vagrant init centos/7</code> 会创建Vagrantfile文件</li>
+<li>执行<code>vagrant up</code> 第一次执行的时候会远程下相关的镜像文件，并启动虚拟机。</li>
+<li>连接虚拟机通过<code>vagrant ssh</code> 连接，默认的账号密码是： vagrant vagrant</li>
+</ul>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210929193523944.png" alt="image-20210929193523944"></p>
+<p><strong>网络配置</strong>：</p>
+<p>找到对应的Vagrantfile文件</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210929194019415.png" alt="image-20210929194019415"></p>
+<p>查看当前主机给虚拟机分配的网关的网段：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210929194117484.png" alt="image-20210929194117484"></p>
+<p>所以修改后的ip为：192.168.56.10</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210929194200081.png" alt="image-20210929194200081"></p>
+<p>重启测试：需要提供私钥</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210929201846033.png" alt="image-20210929201846033"></p>
+<p>私钥地址：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210929201907676.png" alt="image-20210929201907676"></p>
+<h4 id="1-4-3-Docker安装"><a href="#1-4-3-Docker安装" class="headerlink" title="1.4.3 Docker安装"></a>1.4.3 Docker安装</h4><p>参考官方文档安装：<a target="_blank" rel="noopener" href="https://docs.docker.com/engine/install/centos/">https://docs.docker.com/engine/install/centos/</a></p>
+<p>卸载原有的环境：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">sudo yum remove docker \</span><br><span class="line">                 docker-client \</span><br><span class="line">                 docker-client-latest \</span><br><span class="line">                 docker-common \</span><br><span class="line">                 docker-latest \</span><br><span class="line">                 docker-latest-logrotate \</span><br><span class="line">                 docker-logrotate \</span><br><span class="line">                 docker-engine</span><br></pre></td></tr></table></figure>
+<p>安装对应的依赖环境和镜像地址</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install -y yum-utils</span><br><span class="line">sudo yum-config-manager \</span><br><span class="line">   --add-repo \</span><br><span class="line">   https://download.docker.com/linux/centos/docker-ce.repo</span><br></pre></td></tr></table></figure>
+<p>安装过慢设置镜像</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>直接安装docker CE</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install -y docker-ce docker-ce-cli containerd.io</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210929204510597.png" alt="image-20210929204510597"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210929205506134.png" alt="image-20210929205506134"></p>
+<p>表示安装成功</p>
+<p>如果上面不成功参考这个</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/rnnf_yyds/article/details/139577927">https://blog.csdn.net/rnnf_yyds/article/details/139577927</a></p>
+<p>启动docker服务</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl start docker</span><br></pre></td></tr></table></figure>
+<p>查看docker的版本</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo docker version</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210929205610315.png" alt="image-20210929205610315"></p>
+<p>补充：通过官方的镜像地址下载docker会比较慢，</p>
+<p>配置阿里云的镜像地址：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</span><br></pre></td></tr></table></figure>
+<p>yum更新下即可：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum makecache fast</span><br></pre></td></tr></table></figure>
+<p>开机启动docker</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl enable docker</span><br></pre></td></tr></table></figure>
+<h3 id="1-5-Docker的基本组成"><a href="#1-5-Docker的基本组成" class="headerlink" title="1.5 Docker的基本组成"></a>1.5 Docker的基本组成</h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322104932714.png" alt="image-20210322104932714"></p>
+<h4 id="1-5-1-镜像-image"><a href="#1-5-1-镜像-image" class="headerlink" title="1.5.1 镜像(image)"></a>1.5.1 镜像(image)</h4><p>  Docker 镜像（Image）就是一个只读的模板。镜像可以用来创建 Docker 容器，一个镜像可以创建很多容器。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">docker</th>
+<th style="text-align:left">面向对象</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">容器</td>
+<td style="text-align:left">对象</td>
+</tr>
+<tr>
+<td style="text-align:left">镜像</td>
+<td style="text-align:left">类</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="1-5-2-容器-container"><a href="#1-5-2-容器-container" class="headerlink" title="1.5.2 容器(container)"></a>1.5.2 容器(container)</h4><p>  Docker 利用容器（Container）独立运行的一个或一组应用。容器是用镜像创建的运行实例。它可以被启动、开始、停止、删除。每个容器都是相互隔离的、保证安全的平台。可以把容器看做是一个简易版的 Linux 环境（包括root用户权限、进程空间、用户空间和网络空间等）和运行在其中的应用程序。容器的定义和镜像几乎一模一样，也是一堆层的统一视角，唯一区别在于容器的最上面那一层是可读可写的。</p>
+<h4 id="1-5-3-仓库-repository"><a href="#1-5-3-仓库-repository" class="headerlink" title="1.5.3 仓库(repository)"></a>1.5.3 仓库(repository)</h4><p>  仓库（Repository）是集中存放镜像文件的场所。<br>  仓库(Repository)和仓库注册服务器（Registry）是有区别的。仓库注册服务器上往往存放着多个仓库，每个仓库中又包含了多个镜像，每个镜像有不同的标签（tag）。<br>  仓库分为公开仓库（Public）和私有仓库（Private）两种形式。<br>  最大的公开仓库是 Docker Hub(<a target="_blank" rel="noopener" href="https://hub.docker.com/)，存放了数量庞大的镜像供用户下载。国内的公开仓库包括阿里云">https://hub.docker.com/)，存放了数量庞大的镜像供用户下载。国内的公开仓库包括阿里云</a> 、网易云 等</p>
+<h4 id="1-5-4-总结"><a href="#1-5-4-总结" class="headerlink" title="1.5.4 总结"></a>1.5.4 总结</h4><p>  image 文件生成的容器实例，本身也是一个文件，称为镜像文件。<br>  一个容器运行一种服务，当我们需要的时候，就可以通过docker客户端创建一个对应的运行实例，也就是我们的容器<br>  至于仓储，就是放了一堆镜像的地方，我们可以把镜像发布到仓储中，需要的时候从仓储中拉下来就可以了。</p>
+<h3 id="1-6-阿里云镜像加速"><a href="#1-6-阿里云镜像加速" class="headerlink" title="1.6 阿里云镜像加速"></a>1.6 阿里云镜像加速</h3><p>默认访问的仓库是在国外所以访问速度是没法保证的。为了更好的体验，我们可以配置阿里云的镜像加速</p>
+<p><a target="_blank" rel="noopener" href="http://dev.aliyun.com/search.html">http://dev.aliyun.com/search.html</a></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322114418740.png" alt="image-20210322114418740"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322114516361.png" alt="image-20210322114516361"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322114551079.png" alt="image-20210322114551079"></p>
+<p>按照官网提示，执行对应的操作即可</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">[root@bobo01 ~]# sudo mkdir -p /etc/docker</span><br><span class="line">[root@bobo01 ~]# cd /etc/docker/</span><br><span class="line">[root@bobo01 docker]# ll</span><br><span class="line">总用量 4</span><br><span class="line">-rw-------. 1 root root 244 3月  22 11:39 key.json</span><br><span class="line">[root@bobo01 docker]# vim daemon.json</span><br><span class="line">[root@bobo01 docker]# sudo systemctl daemon-reload</span><br><span class="line">[root@bobo01 docker]# sudo systemctl restart docker</span><br><span class="line">[root@bobo01 docker]# ll</span><br><span class="line">总用量 8</span><br><span class="line">-rw-r--r--. 1 root root  67 3月  22 11:48 daemon.json</span><br><span class="line">-rw-------. 1 root root 244 3月  22 11:39 key.json</span><br><span class="line">[root@bobo01 docker]# cat daemon.json </span><br><span class="line">&#123;</span><br><span class="line">  &quot;registry-mirrors&quot;: [&quot;https://v9j5rufo.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125;</span><br><span class="line">[root@bobo01 docker]# </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="1-7-Docker卸载"><a href="#1-7-Docker卸载" class="headerlink" title="1.7 Docker卸载"></a>1.7 Docker卸载</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop docker</span><br><span class="line">yum -y remov docker-ce</span><br><span class="line">rm -rf /var/lib/docker</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">重启服务</span></span><br><span class="line">sudo systemctl restart docker</span><br></pre></td></tr></table></figure>
+<h2 id="2-Docker的常用命令"><a href="#2-Docker的常用命令" class="headerlink" title="2.Docker的常用命令"></a>2.Docker的常用命令</h2><h3 id="2-1-帮助命令"><a href="#2-1-帮助命令" class="headerlink" title="2.1 帮助命令"></a>2.1 帮助命令</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>docker version</td>
+<td>查看docker的版本信息</td>
+</tr>
+<tr>
+<td>docker info</td>
+<td>查看docker详细的信息</td>
+</tr>
+<tr>
+<td>docker —help</td>
+<td>docker的帮助命令，可以查看到相关的其他命令</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>docker version</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20211022020318077.png" alt="image-20211022020318077"></p>
+<p>docker info</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20211022020358319.png" alt="image-20211022020358319"></p>
+<p>docker —help</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20211022020435579.png" alt="image-20211022020435579"></p>
+<h3 id="2-2-镜像命令"><a href="#2-2-镜像命令" class="headerlink" title="2.2 镜像命令"></a>2.2 镜像命令</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>镜像命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>docker images</td>
+<td>列出本地主机上的镜像</td>
+</tr>
+<tr>
+<td>docker search 镜像名称</td>
+<td>从 docker hub 上搜索镜像</td>
+</tr>
+<tr>
+<td>docker pull 镜像名称</td>
+<td>从docker hub 上下载镜像</td>
+</tr>
+<tr>
+<td>docker rmi 镜像名称</td>
+<td>删除本地镜像</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="2-2-1-docker-images"><a href="#2-2-1-docker-images" class="headerlink" title="2.2.1 docker images"></a>2.2.1 docker images</h4><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20211022020503339.png" alt="image-20211022020503339"></p>
+<p>镜像表格信息说明</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>REPOSITORY</td>
+<td>表示镜像的仓库源</td>
+</tr>
+<tr>
+<td>TAG</td>
+<td>镜像的标签</td>
+</tr>
+<tr>
+<td>IMAGE ID</td>
+<td>镜像ID</td>
+</tr>
+<tr>
+<td>CREATED</td>
+<td>镜像创建时间</td>
+</tr>
+<tr>
+<td>SIZE</td>
+<td>镜像大小</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-a</td>
+<td>列出本地所有的镜像</td>
+</tr>
+<tr>
+<td>-q</td>
+<td>只显示镜像ID</td>
+</tr>
+<tr>
+<td>—digests</td>
+<td>显示镜像的摘要信息</td>
+</tr>
+<tr>
+<td>—no-trunc</td>
+<td>显示完整的镜像信息</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">[root@bobo01 ~]# docker images</span><br><span class="line">REPOSITORY    TAG       IMAGE ID       CREATED       SIZE</span><br><span class="line">hello-world   latest    d1165f221234   2 weeks ago   13.3kB</span><br><span class="line">[root@bobo01 ~]# </span><br><span class="line">[root@bobo01 ~]# docker images -a</span><br><span class="line">REPOSITORY    TAG       IMAGE ID       CREATED       SIZE</span><br><span class="line">hello-world   latest    d1165f221234   2 weeks ago   13.3kB</span><br><span class="line">[root@bobo01 ~]# docker images -q</span><br><span class="line">d1165f221234</span><br><span class="line">[root@bobo01 ~]# docker images -qa</span><br><span class="line">d1165f221234</span><br><span class="line">[root@bobo01 ~]# docker images --digests</span><br><span class="line">REPOSITORY    TAG       DIGEST                                                                    IMAGE ID       CREATED       SIZE</span><br><span class="line">hello-world   latest    sha256:308866a43596e83578c7dfa15e27a73011bdd402185a84c5cd7f32a88b501a24   d1165f221234   2 weeks ago   13.3kB</span><br><span class="line">[root@bobo01 ~]# docker images --no-trunc</span><br><span class="line">REPOSITORY    TAG       IMAGE ID                                                                  CREATED       SIZE</span><br><span class="line">hello-world   latest    sha256:d1165f2212346b2bab48cb01c1e39ee8ad1be46b87873d9ca7a4e434980a7726   2 weeks ago   13.3kB</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="2-2-2-docker-search"><a href="#2-2-2-docker-search" class="headerlink" title="2.2.2 docker search"></a>2.2.2 docker search</h4><p>​      docker hub是Docker的在线仓库，我们可以通过docker search 在上面搜索我们需要的镜像</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20211022020553527.png" alt="image-20211022020553527"></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—no-trunc</td>
+<td>显示完整的描述信息</td>
+</tr>
+<tr>
+<td>—limit</td>
+<td>分页显示</td>
+</tr>
+<tr>
+<td>-f</td>
+<td>过滤条件  docker search -f STARS=5 tomcat</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="2-2-3-Docker-pull"><a href="#2-2-3-Docker-pull" class="headerlink" title="2.2.3 Docker pull"></a>2.2.3 Docker pull</h4><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_50160384/article/details/139861337">从Docker拉取镜像一直失败超时？这些解决方案帮你解决烦恼_docker拉取镜像超时-CSDN博客</a></p>
+<p>​     从Docker hub 上下载镜像文件</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20211022020640360.png" alt="image-20211022020640360"></p>
+<p>等待下载完成即可</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20211022020759410.png" alt="image-20211022020759410"></p>
+<h4 id="2-2-4-Docker-rmi"><a href="#2-2-4-Docker-rmi" class="headerlink" title="2.2.4 Docker rmi"></a>2.2.4 Docker rmi</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>删除方式</th>
+<th>命令</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>删除单个</td>
+<td>docker rmi -f 镜像ID</td>
+</tr>
+<tr>
+<td>删除多个</td>
+<td>docker rmi -f 镜像1:TAG 镜像2:TAG</td>
+</tr>
+<tr>
+<td>删除全部</td>
+<td>docker rmi -f $(docker images -qa)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>-f 表示强制删除</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20211022020847056.png" alt="image-20211022020847056"></p>
+<h3 id="2-3-容器命令"><a href="#2-3-容器命令" class="headerlink" title="2.3 容器命令"></a>2.3 容器命令</h3><p> 有镜像才能创建容器。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20211022020905565.png" alt="image-20211022020905565"></p>
+<h4 id="2-3-1-创建并启动容器"><a href="#2-3-1-创建并启动容器" class="headerlink" title="2.3.1 创建并启动容器"></a>2.3.1 创建并启动容器</h4><p>创建并启动一个容器的命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run [OPTIONS] IMAGE [COMMAND]</span><br></pre></td></tr></table></figure>
+<p>OPTIONS中的一些参数</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>options</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>--name</td>
+<td style="text-align:left">“容器新名字”: 为容器指定一个名称</td>
+</tr>
+<tr>
+<td>-d</td>
+<td style="text-align:left">后台运行容器，并返回容器ID，也即启动守护式容器</td>
+</tr>
+<tr>
+<td><code>-i</code></td>
+<td style="text-align:left"><code>以交互模式运行容器，通常与 -t 同时使用</code></td>
+</tr>
+<tr>
+<td><code>-t</code></td>
+<td style="text-align:left"><code>为容器重新分配一个伪输入终端，通常与 -i 同时使用</code></td>
+</tr>
+<tr>
+<td>-P:</td>
+<td style="text-align:left">随机端口映射</td>
+</tr>
+<tr>
+<td>-p</td>
+<td style="text-align:left">指定端口映射，有以下四种格式 ip:hostPort:containerPort<br>ip::containerPort<br><code>hostPort:containerPort</code><br>containerPort<br></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>交互式的容器</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it centos /bin/bash</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20211022021031746.png" alt="image-20211022021031746"></p>
+<h4 id="2-3-2-列举运行的容器"><a href="#2-3-2-列举运行的容器" class="headerlink" title="2.3.2 列举运行的容器"></a>2.3.2 列举运行的容器</h4><p>​     我们要查看当前正在运行的容器有哪些，可以通过ps 命令来查看</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps [OPTIONS]</span><br></pre></td></tr></table></figure>
+<p>OPTONS可用的参数</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>OPTIONS</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-a</td>
+<td>列出当前所有正在运行的容器+历史上运行过的</td>
+</tr>
+<tr>
+<td>-l</td>
+<td>显示最近创建的容器。</td>
+</tr>
+<tr>
+<td>-n</td>
+<td>显示最近n个创建的容器。</td>
+</tr>
+<tr>
+<td>-q</td>
+<td>静默模式，只显示容器编号。</td>
+</tr>
+<tr>
+<td>—no-trunc</td>
+<td>不截断输出。</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20211022021055276.png" alt="image-20211022021055276"></p>
+<h4 id="2-3-3-退出容器命令"><a href="#2-3-3-退出容器命令" class="headerlink" title="2.3.3 退出容器命令"></a>2.3.3 退出容器命令</h4><p>​     我们启动了一个容器后，如何退出容器</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>退出方式</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>exit</td>
+<td>容器停止退出</td>
+</tr>
+<tr>
+<td>ctrl+p+q</td>
+<td>容器不停止退出</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="2-3-4-启动容器"><a href="#2-3-4-启动容器" class="headerlink" title="2.3.4 启动容器"></a>2.3.4 启动容器</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker start 容器ID或者容器名称</span><br></pre></td></tr></table></figure>
+<h4 id="2-3-5-重启容器"><a href="#2-3-5-重启容器" class="headerlink" title="2.3.5 重启容器"></a>2.3.5 重启容器</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker restart 容器id或者名称</span><br></pre></td></tr></table></figure>
+<h4 id="2-3-6-停止容器"><a href="#2-3-6-停止容器" class="headerlink" title="2.3.6 停止容器"></a>2.3.6 停止容器</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker stop 容器ID或者名称</span><br></pre></td></tr></table></figure>
+<p>还可以通过强制停止方式处理</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker kill 容器ID或者名称</span><br></pre></td></tr></table></figure>
+<h4 id="2-3-7-删除容器"><a href="#2-3-7-删除容器" class="headerlink" title="2.3.7 删除容器"></a>2.3.7 删除容器</h4><p>​      有时候容器使用完成就没有作用了，我们想要删除掉容器，这时可以通过rm命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker rm 容器ID</span><br><span class="line">docker rm -f $(docker ps -qa)</span><br><span class="line">docker ps -a -q | xargs docker rm</span><br></pre></td></tr></table></figure>
+<h3 id="2-4-其他命令"><a href="#2-4-其他命令" class="headerlink" title="2.4 其他命令"></a>2.4 其他命令</h3><h4 id="2-4-1-守护式容器"><a href="#2-4-1-守护式容器" class="headerlink" title="2.4.1 守护式容器"></a>2.4.1 守护式容器</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d 容器名称</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20211022021119521.png" alt="image-20211022021119521"></p>
+<p>我们通过 docker ps -a 可以看到刚刚启动的容器已经退出了</p>
+<p>​      为了让守护式容器能够一直执行，我们可以在启动容器后在后台运行一个循环的脚本</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d centos /bin/bash -c &#x27;while true;do echo hello bobo;sleep 2;done&#x27;</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20211022021227949.png" alt="image-20211022021227949"></p>
+<p>查看我们运行的日志</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker logs -t -f --tail 3 容器ID</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20211022021251362.png" alt="image-20211022021251362"></p>
+<p>查看容器中运行的进程</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker top 容器ID</span><br></pre></td></tr></table></figure>
+<h4 id="2-4-2-查看容器细节"><a href="#2-4-2-查看容器细节" class="headerlink" title="2.4.2 查看容器细节"></a>2.4.2 查看容器细节</h4><p>我们想要查看容器的细节可以通过inspect命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker inspect 容器ID</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20211022021309686.png" alt="image-20211022021309686"></p>
+<h4 id="2-4-3-进入运行的容器"><a href="#2-4-3-进入运行的容器" class="headerlink" title="2.4.3 进入运行的容器"></a>2.4.3 进入运行的容器</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>进入方式</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>exec</td>
+<td>在容器中打开新的终端,并且可以启动新的进程</td>
+</tr>
+<tr>
+<td>attach</td>
+<td>直接进入容器启动命令的终端，不会启动新的进程</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/Docker.md" alt="image-20210322143814896"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322143619205.png" alt="image-20210322143619205"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20240904091732056.png" alt="image-20240904091732056"></p>
+<h4 id="2-4-4-文件复制"><a href="#2-4-4-文件复制" class="headerlink" title="2.4.4 文件复制"></a>2.4.4 文件复制</h4><p>​      我们有时需要从容器中拷贝内容到宿主机中</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker cp 容器ID:容器内路径  目的地路径</span><br></pre></td></tr></table></figure>
+<h2 id="3-Docker镜像文件介绍"><a href="#3-Docker镜像文件介绍" class="headerlink" title="3.Docker镜像文件介绍"></a>3.Docker镜像文件介绍</h2><h3 id="3-1-镜像是什么"><a href="#3-1-镜像是什么" class="headerlink" title="3.1 镜像是什么"></a>3.1 镜像是什么</h3><p>首先我们来看看镜像到底是什么？虽然前面有介绍过<code>镜像</code>和<code>容器</code>,但也不是特别的深入。</p>
+<blockquote>
+<p>镜像是一种轻量级、可执行的独立软件包，用来打包软件运行环境和基于运行环境开发的软件，它包含运行某个软件所需的所有内容，包括代码、运行时、库、环境变量和配置文件。</p>
+</blockquote>
+<h4 id="3-1-1-UnionFS"><a href="#3-1-1-UnionFS" class="headerlink" title="3.1.1 UnionFS"></a>3.1.1 UnionFS</h4><p>  UnionFS（联合文件系统）: Union文件系统（UnionFS）是一种分层、轻量级并且高性能的文件系统，它支持对文件系统的修改作为一次提交来一层层的叠加，同时可以将不同目录挂载到同一个虚拟文件系统下(unite several directories into a single virtual filesystem)。Union 文件系统是 Docker 镜像的基础。镜像可以通过分层来进行继承，基于基础镜像（没有父镜像），可以制作各种具体的应用镜像。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322155050557.png" alt="image-20210322155050557"></p>
+<p><code>特性</code>：一次同时加载多个文件系统，但从外面看起来，只能看到一个文件系统，联合加载会把各层文件系统叠加起来，这样最终的文件系统会包含所有底层的文件和目录</p>
+<h4 id="3-1-2-镜像加载原理"><a href="#3-1-2-镜像加载原理" class="headerlink" title="3.1.2 镜像加载原理"></a>3.1.2 镜像加载原理</h4><p>Docker镜像加载原理：</p>
+<p>  Docker的镜像实际上由一层一层的文件系统组成，这种层级的文件系统UnionFS。<br>  Bootfs(boot file system)主要包含Bootloader和Kernel, Bootloader主要是引导加载Kernel, Linux刚启动时会加载Bootfs文件系统，在Docker镜像的最底层是bootfs。这一层与我们典型的Linux/Unix系统是一样的，包含Boot加载器和内核。当boot加载完成之后整个内核就都在内存中了，此时内存的使用权已由bootfs转交给内核，此时系统也会卸载bootfs。<br>  Rootfs (root file system) ，在Bootfs之上。包含的就是典型 Linux 系统中的 /dev, /proc, /bin, /etc 等标准目录和文件。Rootfs就是各种不同的操作系统发行版，比如Ubuntu，Centos等等。</p>
+<h4 id="3-1-3-分层的镜像"><a href="#3-1-3-分层的镜像" class="headerlink" title="3.1.3 分层的镜像"></a>3.1.3 分层的镜像</h4><p>  其实我们前面在 pull 文件的时候比如 Tomcat，在pull界面我们就可以看到下载的文件是一层层的。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322155748953.png" alt="image-20210322155748953"></p>
+<h4 id="3-1-4-分层结构的特点"><a href="#3-1-4-分层结构的特点" class="headerlink" title="3.1.4 分层结构的特点"></a>3.1.4 分层结构的特点</h4><p>  其实我们也会考虑docker为什么会才用这种分层的结果，它有什么好处呢？最大的一个好处就是共享资源<br>  比如：有多个镜像都从相同的 base 镜像构建而来，那么宿主机只需在磁盘上保存一份base镜像，同时内存中也只需加载一份 base 镜像，就可以为所有容器服务了。而且镜像的每一层都可以被共享。</p>
+<h3 id="3-2-镜像的特点"><a href="#3-2-镜像的特点" class="headerlink" title="3.2 镜像的特点"></a>3.2 镜像的特点</h3><p>​     大家需要注意，Docker镜像都是只读的，当容器启动时，一个新的可写层被加载到镜像的顶部，这一层通常被称为容器层,容器层之下的都叫镜像层。</p>
+<h3 id="3-3-镜像操作"><a href="#3-3-镜像操作" class="headerlink" title="3.3 镜像操作"></a>3.3 镜像操作</h3><p> 我们现在已经掌握了从docker hub上获取相关镜像，然后运行容器，并作出我们自己的处理，但有时候我们需要将我们自己的容器制作为对应的镜像，以便后面继续使用，这时我们就需要用到docker commit …命令了，这节我们就通过案例来介绍下 docker commit …命令的使用</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker commit -m=&quot;要提交的描述信息&quot; -a=&quot;作者&quot; 容器ID 要创建的目标镜像名:[标签名]</span><br></pre></td></tr></table></figure>
+<p><strong>操作案例</strong><br>  我们通过tomcat镜像来创建容器后操作处理,然后将容器制作为新的镜像然后我们通过新的镜像来制作容器来演示这个效果，有点绕，我们直接通过案例来说。</p>
+<h4 id="3-3-1-下载tomcat镜像"><a href="#3-3-1-下载tomcat镜像" class="headerlink" title="3.3.1 下载tomcat镜像"></a>3.3.1 下载tomcat镜像</h4><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322162307165.png" alt="image-20210322162307165"></p>
+<h4 id="3-3-2-创建容器并启动"><a href="#3-3-2-创建容器并启动" class="headerlink" title="3.3.2 创建容器并启动"></a>3.3.2 创建容器并启动</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it -p 8888:8080 tomcat</span><br></pre></td></tr></table></figure>
+<p>参数</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-p</td>
+<td>主机端口:docker容器端口</td>
+</tr>
+<tr>
+<td>-P</td>
+<td>随机分配端口</td>
+</tr>
+<tr>
+<td>-i</td>
+<td>交互</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>终端</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322162601607.png" alt="image-20210322162601607"></p>
+<p>404</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322162631148.png" alt="image-20210322162631148"></p>
+<h4 id="3-3-3-修改容器"><a href="#3-3-3-修改容器" class="headerlink" title="3.3.3 修改容器"></a>3.3.3 修改容器</h4><p>​     我们发现启动的容器中没有要访问的资源，那么我们自己创建对应的资源即可</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it 容器ID /bin/bash</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322164312320.png" alt="image-20210322164312320"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322164327544.png" alt="image-20210322164327544"></p>
+<h4 id="3-3-4-创建镜像"><a href="#3-3-4-创建镜像" class="headerlink" title="3.3.4 创建镜像"></a>3.3.4 创建镜像</h4><p>​     我们现在的容器和下载的有区别了，我们可以在这个基础上来创建新的镜像</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker commit -a=&#x27;bobo&#x27; -m=&#x27;add index.html&#x27; 容器ID bobo/tomcat:1.666</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322164634681.png" alt="image-20210322164634681"></p>
+<h4 id="3-3-5-启动新的镜像"><a href="#3-3-5-启动新的镜像" class="headerlink" title="3.3.5 启动新的镜像"></a>3.3.5 启动新的镜像</h4><p>​     现在我们可以通过我们自己新创建的镜像文件来创建并启动容器了</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it -p 8888:8080 bobo/tomcat:1.6666</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322164902733.png" alt="image-20210322164902733"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322164919078.png" alt="image-20210322164919078"></p>
+<h2 id="4-Docker数据卷"><a href="#4-Docker数据卷" class="headerlink" title="4.Docker数据卷"></a>4.Docker数据卷</h2><h3 id="4-1-数据卷"><a href="#4-1-数据卷" class="headerlink" title="4.1 数据卷"></a>4.1 数据卷</h3><p>​      前面我们介绍了镜像和容器，通过镜像我们可以启动多个容器，但是我们发现当我们的容器停止获取删除后，我们在容器中的应用的一些数据也丢失了，这时为了解决容器的数据持久化，我们需要通过容器数据卷来解决这个问题</p>
+<h4 id="4-1-1-数据卷是什么"><a href="#4-1-1-数据卷是什么" class="headerlink" title="4.1.1 数据卷是什么"></a>4.1.1 数据卷是什么</h4><p>  Docker容器产生的数据，如果不通过docker commit生成新的镜像，使得数据做为镜像的一部分保存下来，那么当容器删除后，数据自然也就没有了。为了能保存数据在docker中我们使用卷。简单来说，容器卷就相当于Redis中持久化方式的RDB和AOF。</p>
+<h4 id="4-1-2-解决了什么问题"><a href="#4-1-2-解决了什么问题" class="headerlink" title="4.1.2 解决了什么问题"></a>4.1.2 解决了什么问题</h4><p>  卷就是目录或文件，存在于一个或多个容器中，由docker挂载到容器，但不属于联合文件系统，因此能够绕过Union File System提供一些用于持续存储或共享数据的特性：<br>  卷的设计目的就是数据的持久化，完全独立于容器的生存周期，因此Docker不会在容器删除时删除其挂载的数据卷</p>
+<p>特点：</p>
+<ol>
+<li><p>数据卷可在容器之间共享或重用数据</p>
+</li>
+<li><p>卷中的更改可以直接生效</p>
+</li>
+<li><p>数据卷中的更改不会包含在镜像的更新中</p>
+</li>
+<li><p>数据卷的生命周期一直持续到没有容器使用它为止</p>
+</li>
+</ol>
+<blockquote>
+<p>持久化，容器间继承和共享数据</p>
+</blockquote>
+<h4 id="4-1-3-数据卷使用"><a href="#4-1-3-数据卷使用" class="headerlink" title="4.1.3 数据卷使用"></a>4.1.3 数据卷使用</h4><h5 id="4-1-3-1-直接添加"><a href="#4-1-3-1-直接添加" class="headerlink" title="4.1.3.1 直接添加"></a>4.1.3.1 直接添加</h5><p>运行一个centos容器</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it -v /宿主机绝对路径:/容器内目录 镜像名</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322174000349.png" alt="image-20210322174000349"></p>
+<p>在宿主机的根目录下会多出对应的文件夹</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322174036694.png" alt="image-20210322174036694"></p>
+<p>然后在容器的根目录下也会出现对应的文件夹</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322174146051.png" alt="image-20210322174146051"></p>
+<p>通过inspect命令可以查询容器的详情</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322174318987.png" alt="image-20210322174318987"></p>
+<p>数据共享的操作</p>
+<p>宿主机添加对应的文件</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322174425770.png" alt="image-20210322174425770"></p>
+<p>容器中查看</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322174454182.png" alt="image-20210322174454182"></p>
+<p>容器中可以同步看到，然后在容器中修改数据</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322174546945.png" alt="image-20210322174546945"></p>
+<p>停止掉容器后，数据依然存在</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322174750851.png" alt="image-20210322174750851"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322174836186.png" alt="image-20210322174836186"></p>
+<p>权限控制：不允许在容器中修改</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322175021502.png" alt="image-20210322175021502"></p>
+<p>修改权限</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it -v /宿主机绝对路径:/容器目录:ro 镜像名</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322175401982.png" alt="image-20210322175401982"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210322175426241.png" alt="image-20210322175426241"></p>
+<h5 id="4-1-3-2-DockerFiler添加"><a href="#4-1-3-2-DockerFiler添加" class="headerlink" title="4.1.3.2 DockerFiler添加"></a>4.1.3.2 DockerFiler添加</h5><p>​      宿主机跟目录下创建一个mydocker，并在该目录下创建一个文件，内容如下</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">volume <span class="built_in">test</span></span></span><br><span class="line"></span><br><span class="line">FROM centos</span><br><span class="line"></span><br><span class="line">VOLUME [&quot;/dataVolumeContainer1&quot;,&quot;/dataVolumeContainer2&quot;]</span><br><span class="line"></span><br><span class="line">CMD echo &quot;finished,--------success1&quot;</span><br><span class="line"></span><br><span class="line">CMD /bin/bash</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>根据这个DockerFile构建我们的镜像文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker build -f dockerFile1 -t bobo/centos .</span><br></pre></td></tr></table></figure>
+<p>-f DockerFile文件的路径</p>
+<p>-t 标签  </p>
+<p>. 当前路径</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210323134552423.png" alt="image-20210323134552423"></p>
+<p>根据新创建的镜像文件创建一个容器，启动后我们可以看到在容器中创建的有对应的目录</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210323134734726.png" alt="image-20210323134734726"></p>
+<p>这两个目录和宿主机的映射目录在哪呢？这时我们可以通过 inspect命令查看</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210323134944511.png" alt="image-20210323134944511"></p>
+<p>验证就只需要在宿主机中创建文件，然后再到容器对应的文件夹中查看即可</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210323135123537.png" alt="image-20210323135123537"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210323135143036.png" alt="image-20210323135143036"></p>
+<h3 id="4-2-数据卷容器"><a href="#4-2-数据卷容器" class="headerlink" title="4.2 数据卷容器"></a>4.2 数据卷容器</h3><p>命名的容器挂载数据卷，其他容器通过挂载这个容器实现数据共享，挂载数据的容器，称之为数据卷容器。</p>
+<h4 id="4-2-1-启动一个父容器"><a href="#4-2-1-启动一个父容器" class="headerlink" title="4.2.1 启动一个父容器"></a>4.2.1 启动一个父容器</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it --name dc01 bobo/centos</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210323140342227.png" alt="image-20210323140342227"></p>
+<h4 id="4-2-2-创建两个子容器"><a href="#4-2-2-创建两个子容器" class="headerlink" title="4.2.2 创建两个子容器"></a>4.2.2 创建两个子容器</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker run -it --name dc02 --volumes-from dc01 bobo/centos</span><br><span class="line">docker run -it --name dc03 --volumes-from dc01 bobo/centos</span><br></pre></td></tr></table></figure>
+<p>创建了两个子容器后，首先都可以看到dc01中的共享资源。第二个在dc01中修改了共享资源文件后，在两个容器中也是可见的。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210323140644807.png" alt="image-20210323140644807"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210323140706979.png" alt="image-20210323140706979"></p>
+<p>注意，删除dc01后，dc02和dc03之间数据还是共享的</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210323140843467.png" alt="image-20210323140843467"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210323140909124.png" alt="image-20210323140909124"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210323140926095.png" alt="image-20210323140926095"></p>
+<p>注意：容器之间配置信息的传递，数据卷的生命周期一直持续到没有容器使用它为止。        </p>
+<h2 id="5-DockerFile"><a href="#5-DockerFile" class="headerlink" title="5 DockerFile"></a>5 DockerFile</h2><p> DockerFile是用来构建Docker镜像的<code>构建文件</code>，是由一系列<code>命令</code>和<code>参数</code>构成的<code>脚本</code>。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210323143328341.png" alt="image-20210323143328341"></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">FROM scratch</span><br><span class="line">ADD centos-7-x86_64-docker.tar.xz /</span><br><span class="line"></span><br><span class="line">LABEL \</span><br><span class="line">    org.label-schema.schema-version=&quot;1.0&quot; \</span><br><span class="line">    org.label-schema.name=&quot;CentOS Base Image&quot; \</span><br><span class="line">    org.label-schema.vendor=&quot;CentOS&quot; \</span><br><span class="line">    org.label-schema.license=&quot;GPLv2&quot; \</span><br><span class="line">    org.label-schema.build-date=&quot;20201113&quot; \</span><br><span class="line">    org.opencontainers.image.title=&quot;CentOS Base Image&quot; \</span><br><span class="line">    org.opencontainers.image.vendor=&quot;CentOS&quot; \</span><br><span class="line">    org.opencontainers.image.licenses=&quot;GPL-2.0-only&quot; \</span><br><span class="line">    org.opencontainers.image.created=&quot;2020-11-13 00:00:00+00:00&quot;</span><br><span class="line"></span><br><span class="line">CMD [&quot;/bin/bash&quot;]</span><br></pre></td></tr></table></figure>
+<h4 id="5-1-DockerFile介绍"><a href="#5-1-DockerFile介绍" class="headerlink" title="5.1 DockerFile介绍"></a>5.1 DockerFile介绍</h4><h5 id="5-1-1-构建过程"><a href="#5-1-1-构建过程" class="headerlink" title="5.1.1. 构建过程"></a>5.1.1. 构建过程</h5><p>​       Dockerfile中的指令需要满足如下的规则</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20210323143424681.png" alt="image-20210323143424681"></p>
+<h5 id="5-1-2-执行流程"><a href="#5-1-2-执行流程" class="headerlink" title="5.1.2 执行流程"></a>5.1.2 执行流程</h5><p>  docker执行一个Dockerfile脚本的流程大致如下：</p>
+<ol>
+<li>docker从基础镜像运行一个容器</li>
+<li>执行一条指令并对容器作出修改</li>
+<li>执行类似docker commit的操作提交一个新的镜像层</li>
+<li>docker再基于刚提交的镜像运行一个新的容器</li>
+<li>执行dockerfile中的下一条指令直到所有指令都执行完成</li>
+</ol>
+<p>从应用软件的角度来看，Dockerfile、Docker镜像与Docker容器分别代表软件的三个不同阶段，</p>
+<ul>
+<li>Dockerfile是软件的原材料</li>
+<li>Docker镜像是软件的交付品</li>
+<li>Docker容器则可以认为是软件的运行态。</li>
+</ul>
+<p>Dockerfile面向开发，Docker镜像成为交付标准，Docker容器则涉及部署与运维，三者缺一不可，合力充当Docker体系的基石。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/image-20211006164223413.png" alt="image-20211006164223413"></p>
+<ol>
+<li>Dockerfile，需要定义一个Dockerfile，Dockerfile定义了进程需要的一切东西。Dockerfile涉及的内容包括执行代码或者是文件、环境变量、依赖包、运行时环境、动态链接库、操作系统的发行版、服务进程和内核进程(当应用进程需要和系统服务和内核进程打交道，这时需要考虑如何设计namespace的权限控制)等等;</li>
+<li>Docker镜像，在用Dockerfile定义一个文件之后，docker build时会产生一个Docker镜像，当运行 Docker镜像时，会真正开始提供服务;</li>
+<li>Docker容器，容器是直接提供服务的。</li>
+</ol>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FROM</td>
+<td style="text-align:left">基础镜像，当前新镜像是基于哪个镜像的,有继承的意味</td>
+</tr>
+<tr>
+<td>MAINTAINER</td>
+<td style="text-align:left">镜像维护者的姓名和邮箱地址</td>
+</tr>
+<tr>
+<td>RUN</td>
+<td style="text-align:left">容器构建时需要运行的命令</td>
+</tr>
+<tr>
+<td>EXPOSE</td>
+<td style="text-align:left">当前容器对外暴露的端口</td>
+</tr>
+<tr>
+<td>WORKDIR</td>
+<td style="text-align:left">指定在创建容器后，终端默认登录的进来工作目录，一个落脚点</td>
+</tr>
+<tr>
+<td>ENV</td>
+<td style="text-align:left">用来在构建镜像过程中设置环境变量</td>
+</tr>
+<tr>
+<td>ADD</td>
+<td style="text-align:left">将宿主机目录下的文件拷贝进镜像且ADD命令会自动处理URL和解压tar压缩包</td>
+</tr>
+<tr>
+<td>COPY</td>
+<td style="text-align:left">类似ADD，拷贝文件和目录到镜像中。<br>将从构建上下文目录中&lt;源路径&gt;的文件/目录复制到新的一层的镜像内的&lt;目标路径&gt;位置 <br> COPY src dest <br>COPY [“src”,”dest”]</td>
+</tr>
+<tr>
+<td>VOLUME</td>
+<td style="text-align:left">容器数据卷，用于数据保存和持久化工作</td>
+</tr>
+<tr>
+<td>CMD</td>
+<td style="text-align:left">指定一个容器启动时要运行的命令<br>Dockerfile中可以有多个CMD指令，但只有最后一个生效，CMD会被docker run之后的参数替换</td>
+</tr>
+<tr>
+<td>ENTRYPOINT</td>
+<td style="text-align:left">指定一个容器启动时要运行的命令<br>ENTRYPOINT的目的和CMD一样，都是在指定容器启动程序及参数</td>
+</tr>
+<tr>
+<td>ONBUILD</td>
+<td style="text-align:left">当构建一个被继承的Dockerfile时运行命令,父镜像在被子继承后父镜像的onbuild被触发</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">RUN set -eux; \</span><br><span class="line">	nativeLines=&quot;$(catalina.sh configtest 2&gt;&amp;1)&quot;; \</span><br><span class="line">	nativeLines=&quot;$(echo &quot;$nativeLines&quot; | grep &#x27;Apache Tomcat Native&#x27;)&quot;; \</span><br><span class="line">	nativeLines=&quot;$(echo &quot;$nativeLines&quot; | sort -u)&quot;; \</span><br><span class="line">	if ! echo &quot;$nativeLines&quot; | grep -E &#x27;INFO: Loaded( APR based)? Apache Tomcat Native library&#x27; &gt;&amp;2; then \</span><br><span class="line">		echo &gt;&amp;2 &quot;$nativeLines&quot;; \</span><br><span class="line">		exit 1; \</span><br><span class="line">	fi</span><br><span class="line"></span><br><span class="line">EXPOSE 8080</span><br><span class="line">CMD [&quot;catalina.sh&quot;, &quot;run&quot;]</span><br><span class="line"></span><br><span class="line">docker run -it -p 7777:8080 tomcat  ls -l</span><br><span class="line"></span><br><span class="line">RUN set -eux; \</span><br><span class="line">	nativeLines=&quot;$(catalina.sh configtest 2&gt;&amp;1)&quot;; \</span><br><span class="line">	nativeLines=&quot;$(echo &quot;$nativeLines&quot; | grep &#x27;Apache Tomcat Native&#x27;)&quot;; \</span><br><span class="line">	nativeLines=&quot;$(echo &quot;$nativeLines&quot; | sort -u)&quot;; \</span><br><span class="line">	if ! echo &quot;$nativeLines&quot; | grep -E &#x27;INFO: Loaded( APR based)? Apache Tomcat Native library&#x27; &gt;&amp;2; then \</span><br><span class="line">		echo &gt;&amp;2 &quot;$nativeLines&quot;; \</span><br><span class="line">		exit 1; \</span><br><span class="line">	fi</span><br><span class="line"></span><br><span class="line">EXPOSE 8080</span><br><span class="line">CMD [&quot;catalina.sh&quot;, &quot;run&quot;]</span><br><span class="line">CMD ls -l</span><br></pre></td></tr></table></figure>
+<p>DockerFile命令</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>BUILD</th>
+<th>BOTH</th>
+<th>RUN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FROM</td>
+<td>WORKDIR</td>
+<td>CMD</td>
+</tr>
+<tr>
+<td>MAINTAINER</td>
+<td>USER</td>
+<td>ENV</td>
+</tr>
+<tr>
+<td>COPY</td>
+<td></td>
+<td>EXPOSE</td>
+</tr>
+<tr>
+<td>ADD</td>
+<td></td>
+<td>VOLUME</td>
+</tr>
+<tr>
+<td>RUN</td>
+<td></td>
+<td>ENTRYPOINT</td>
+</tr>
+<tr>
+<td>ONBUILD</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>.dockerignore</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="5-2-DockerFile案例"><a href="#5-2-DockerFile案例" class="headerlink" title="5.2 DockerFile案例"></a>5.2 DockerFile案例</h3><h4 id="5-2-1-Base镜像"><a href="#5-2-1-Base镜像" class="headerlink" title="5.2.1 Base镜像"></a>5.2.1 Base镜像</h4><p>&emsp;&emsp;Docker Hub中99%的镜像都是通过在base镜像中安装和配置需要的软件构建出来的，如下</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20191227010809919.png" alt="在这里插入图片描述"></p>
+<p><code>scratch</code>相对于java中的<code>Object</code></p>
+<h4 id="5-2-2-自定义镜像mycentos"><a href="#5-2-2-自定义镜像mycentos" class="headerlink" title="5.2.2 自定义镜像mycentos"></a>5.2.2 自定义镜像mycentos</h4><p>&emsp;&emsp;我们从官方pull下来的<code>centos</code>镜像是mini版的，所以不带有<code>vim</code>这些基础命令，那我们就来自定义一个镜像，功能比官方下载的强大点，同时运用下各个指令。</p>
+<h5 id="5-2-2-1-编写"><a href="#5-2-2-1-编写" class="headerlink" title="5.2.2.1 编写"></a>5.2.2.1 编写</h5><p>&emsp;&emsp;首先我们来编写对应的Dockerfile文件。内容如下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">FROM centos</span><br><span class="line">MAINTAINER bobo&lt;dengpbs@163.com&gt;</span><br><span class="line"></span><br><span class="line">ENV MYPATH /usr/local</span><br><span class="line">WORKDIR <span class="variable">$MYPATH</span></span><br><span class="line"></span><br><span class="line">RUN yum -y install vim</span><br><span class="line"></span><br><span class="line">EXPOSE 80</span><br><span class="line"></span><br><span class="line">CMD <span class="built_in">echo</span> <span class="variable">$MYPATH</span></span><br><span class="line">CMD <span class="built_in">echo</span> <span class="string">&quot;success--------------ok&quot;</span></span><br><span class="line">CMD /bin/bash</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h5 id="5-2-2-2-构建"><a href="#5-2-2-2-构建" class="headerlink" title="5.2.2.2 构建"></a>5.2.2.2 构建</h5><p>&emsp;&emsp;然后将脚本构建成对应的镜像文件。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker build -f dockerfile名称 -t 新建的镜像名:TAG .</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20191227011557225.png" alt="在这里插入图片描述"></p>
+<p>查看镜像<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20191227011633432.png" alt="在这里插入图片描述"></p>
+<h5 id="5-2-2-3-运行"><a href="#5-2-2-3-运行" class="headerlink" title="5.2.2.3 运行"></a>5.2.2.3 运行</h5><p>&emsp;&emsp;运行镜像文件。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it 新镜像名称:TAG</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20191227011815639.png" alt="在这里插入图片描述"></p>
+<p>运行容器后，落脚点是 <code>/usr/local</code> 因为我们配置了<code>WORKDIR</code></p>
+<h5 id="5-2-2-4-镜像历史"><a href="#5-2-2-4-镜像历史" class="headerlink" title="5.2.2.4 镜像历史"></a>5.2.2.4 镜像历史</h5><p>&emsp;&emsp;查看一个镜像文件的变更历史可以使用如下命令:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">history</span> 镜像名</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20191227012021461.png" alt="在这里插入图片描述"></p>
+<p>在本例中我们用到了 <code>FROM</code> <code>MAINTAINER</code> <code>RUN</code> <code>EXPOSE</code> <code>ENV</code> <code>WORKDIR</code> 命令</p>
+<h4 id="5-2-3-CMD-ENTRYPOINT案例"><a href="#5-2-3-CMD-ENTRYPOINT案例" class="headerlink" title="5.2.3.CMD/ENTRYPOINT案例"></a>5.2.3.CMD/ENTRYPOINT案例</h4><p>&emsp;&emsp;接下来我们通过案例来看看<code>CMD</code>和<code>ENTRYPOINT</code>两个命令的区别，这两个命令的作用都是<code>指定一个容器启动时要运行的命令</code></p>
+<h5 id="5-2-3-1-CMD"><a href="#5-2-3-1-CMD" class="headerlink" title="5.2.3.1 CMD"></a>5.2.3.1 CMD</h5><p>&emsp;&emsp;Dockerfile中可以有多个CMD指令，但只有最后一个生效，CMD会被docker run之后的参数替换掉，我们通过tomcat的案例来介绍。<br>正常情况如下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it -p 8888:8080 tomcat</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20191227012556840.png" alt="在这里插入图片描述"></p>
+<p>但是当我们在 执行命令后添加参数的话，如下</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20191227012708634.png" alt="在这里插入图片描述"></p>
+<p>原因是我们先看Tomact对应的 Dockerfile文件</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20191227012849616.png" alt="在这里插入图片描述"></p>
+<p>然而我们的run命令 把Dockerfile中的最后的CMD命令覆盖了~~</p>
+<h5 id="5-2-3-2-ENTRYPOINT"><a href="#5-2-3-2-ENTRYPOINT" class="headerlink" title="5.2.3.2 ENTRYPOINT"></a>5.2.3.2 ENTRYPOINT</h5><p>&emsp;&emsp;有别于<code>CMD</code>命令，<code>ENTRYPOINT</code>命令是在 <code>docker run</code> 之后的参数会被当做参数传递给 ENTRYPOINT，之后形成新的组合命令。我们通过<code>curl</code>指令来介绍这个案例。<br>Dockerfile文件如下:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">FROM centos</span><br><span class="line"></span><br><span class="line">RUN yum install -y curl</span><br><span class="line"></span><br><span class="line">ENTRYPOINT [ <span class="string">&quot;curl&quot;</span>, <span class="string">&quot;-s&quot;</span>, <span class="string">&quot;http://www.baidu.com&quot;</span> ]</span><br></pre></td></tr></table></figure>
+<p>构建</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20191227014028980.png" alt="在这里插入图片描述"></p>
+<p>正常run</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20191227014110447.png" alt="在这里插入图片描述"></p>
+<p>加<code>-i</code>参数 查看响应报文头</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20191227014203120.png" alt="在这里插入图片描述"></p>
+<p>通过这个例子 可以看到<code>ENTRYPOINT</code>不会覆盖，而是组合成了一个新的命令。</p>
+<h4 id="5-2-4-自定义Tomcat"><a href="#5-2-4-自定义Tomcat" class="headerlink" title="5.2.4.自定义Tomcat"></a>5.2.4.自定义Tomcat</h4><p>&emsp;&emsp;最后我们通过自定义一个<code>tomcat</code>镜像来介绍下<code>ADD</code>和<code>COPY</code>这两个命令的区别。</p>
+<h5 id="5-2-4-1-创建个tomcat目录"><a href="#5-2-4-1-创建个tomcat目录" class="headerlink" title="5.2.4.1 创建个tomcat目录"></a>5.2.4.1 创建个tomcat目录</h5><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20191227014609416.png" alt="在这里插入图片描述"></p>
+<h5 id="5-2-4-2-添加一个文件"><a href="#5-2-4-2-添加一个文件" class="headerlink" title="5.2.4.2 添加一个文件"></a>5.2.4.2 添加一个文件</h5><p>&emsp;&emsp;在当前目录下创建一个 <code>hello.txt</code>文件，作用是<code>COPY</code>到容器中</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20191227014703342.png" alt="在这里插入图片描述"></p>
+<h5 id="5-2-4-3-拷贝相关软件"><a href="#5-2-4-3-拷贝相关软件" class="headerlink" title="5.2.4.3 拷贝相关软件"></a>5.2.4.3 拷贝相关软件</h5><p>&emsp;&emsp;准备对应的<code>jdk</code>和<code>tomcat</code>的压缩文件。<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20191227015106363.png" alt="在这里插入图片描述"></p>
+<h5 id="5-2-4-4-创建Dockerfile文件"><a href="#5-2-4-4-创建Dockerfile文件" class="headerlink" title="5.2.4.4 创建Dockerfile文件"></a>5.2.4.4 创建Dockerfile文件</h5><p>&emsp;&emsp;创建对应的Dockerfile文件，如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">FROM         centos</span><br><span class="line">MAINTAINER    bobo&lt;dengpbs@163.com&gt;</span><br><span class="line"><span class="comment">#把宿主机当前上下文的hello.txt拷贝到容器/usr/local/路径下</span></span><br><span class="line">COPY readme.txt /usr/local/helloincontainer.txt</span><br><span class="line"><span class="comment">#把java与tomcat添加到容器中</span></span><br><span class="line">ADD jdk-8u73-linux-x64.tar.gz /usr/local/</span><br><span class="line">ADD apache-tomcat-8.5.71.tar.gz /usr/local/</span><br><span class="line"><span class="comment">#安装vim编辑器</span></span><br><span class="line">RUN yum -y install vim</span><br><span class="line"><span class="comment">#设置工作访问时候的WORKDIR路径，登录落脚点</span></span><br><span class="line">ENV MYPATH /usr/local</span><br><span class="line">WORKDIR <span class="variable">$MYPATH</span></span><br><span class="line"><span class="comment">#配置java与tomcat环境变量</span></span><br><span class="line">ENV JAVA_HOME /usr/local/jdk1.8.0_73</span><br><span class="line">ENV CLASSPATH <span class="variable">$JAVA_HOME</span>/lib/dt.jar:<span class="variable">$JAVA_HOME</span>/lib/tools.jar</span><br><span class="line">ENV CATALINA_HOME /usr/local/apache-tomcat-8.5.71</span><br><span class="line">ENV CATALINA_BASE /usr/local/apache-tomcat-8.5.71</span><br><span class="line">ENV PATH <span class="variable">$PATH</span>:<span class="variable">$JAVA_HOME</span>/bin:<span class="variable">$CATALINA_HOME</span>/lib:<span class="variable">$CATALINA_HOME</span>/bin</span><br><span class="line"><span class="comment">#容器运行时监听的端口</span></span><br><span class="line">EXPOSE  8080</span><br><span class="line"><span class="comment">#启动时运行tomcat</span></span><br><span class="line"><span class="comment"># ENTRYPOINT [&quot;/usr/local/apache-tomcat-8.0.47/bin/startup.sh&quot; ]</span></span><br><span class="line"><span class="comment"># CMD [&quot;/usr/local/apache-tomcat-8.0.47/bin/catalina.sh&quot;,&quot;run&quot;]</span></span><br><span class="line">CMD /usr/local/apache-tomcat-8.5.71/bin/startup.sh &amp;&amp; <span class="built_in">tail</span> -F /usr/local/apache-tomcat-8.0.47/bin/logs/catalina.out</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h5 id="5-2-4-5-构建"><a href="#5-2-4-5-构建" class="headerlink" title="5.2.4.5 构建"></a>5.2.4.5 构建</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker build -f dockerfile -t bobotomcat .</span><br></pre></td></tr></table></figure>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/2019122701594630.png" alt="在这里插入图片描述"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20191227020004533.png" alt="在这里插入图片描述"><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20191227020300975.png" alt="在这里插入图片描述"></p>
+<p>构建成功。</p>
+<h5 id="5-2-4-6-run"><a href="#5-2-4-6-run" class="headerlink" title="5.2.4.6 run"></a>5.2.4.6 run</h5><p>&emsp;&emsp;构建成功后，我们就可以运行了，命令如下:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker run -it -p 9080:8080 --name mytomcat8.5 -v /root/dockerfile/tomcat/test:/usr/local/apache-tomcat-8.5.71/webapps/test -v /root/dockerfile/tomcat/tomcatlogs/:/usr/local/apache-tomcat-8.5.71/logs --privileged=<span class="literal">true</span> mytomcat8.5</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>注意：我们在启动的时候指定了相关的 <code>数据卷</code><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20191227020439928.png" alt="在这里插入图片描述"></p>
+<h5 id="5-2-4-7-验证"><a href="#5-2-4-7-验证" class="headerlink" title="5.2.4.7 验证"></a>5.2.4.7 验证</h5><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20191227020413955.png" alt="在这里插入图片描述"></p>
+<h5 id="5-2-4-8-部署web项目"><a href="#5-2-4-8-部署web项目" class="headerlink" title="5.2.4.8 部署web项目"></a>5.2.4.8 部署web项目</h5><p>&emsp;&emsp;既然我们已经部署好了我们自己的tomcat容器，而且也设置了对应的数据卷，那么我们来实际部署一个web案例来看看</p>
+<h6 id="5-2-4-8-1-web-xml文件"><a href="#5-2-4-8-1-web-xml文件" class="headerlink" title="5.2.4.8.1 web.xml文件"></a>5.2.4.8.1 web.xml文件</h6><p>&emsp;&emsp;我们在test目录下创建<code>WEB-INF</code>目录，然后创建<code>web.xml</code>文件，</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20191227020721756.png" alt="在这里插入图片描述"></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">web-app</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag">  <span class="attr">xmlns</span>=<span class="string">&quot;http://java.sun.com/xml/ns/javaee&quot;</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag">  <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd&quot;</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag">  <span class="attr">id</span>=<span class="string">&quot;WebApp_ID&quot;</span> <span class="attr">version</span>=<span class="string">&quot;2.5&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">display-name</span>&gt;</span>test<span class="tag">&lt;/<span class="name">display-name</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">web-app</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h6 id="5-2-4-8-2-index-jsp文件"><a href="#5-2-4-8-2-index-jsp文件" class="headerlink" title="5.2.4.8.2 index.jsp文件"></a>5.2.4.8.2 index.jsp文件</h6><p>&emsp;&emsp;然后创建一个简单的jsp文件即可</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page language=&quot;java&quot; contentType=&quot;text/html; charset=UTF-8&quot; pageEncoding=&quot;UTF-8&quot;%&gt;</span><br><span class="line"></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;</span> <span class="string">&quot;http://www.w3.org/TR/html4/loose.dtd&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;Content-Type&quot;</span> <span class="attr">content</span>=<span class="string">&quot;text/html; charset=UTF-8&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Insert title here<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    -----------welcome------------</span><br><span class="line"></span><br><span class="line">    &lt;%=&quot;i am in docker tomcat self &quot;%&gt;</span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    &lt;% System.out.println(&quot;=============docker tomcat self&quot;);%&gt;</span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h6 id="5-2-4-8-3-重启容器访问即可"><a href="#5-2-4-8-3-重启容器访问即可" class="headerlink" title="5.2.4.8.3 重启容器访问即可"></a>5.2.4.8.3 重启容器访问即可</h6><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20191227021042166.png" alt="在这里插入图片描述"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://oyy0v0.top">oyy0v0</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://oyy0v0.top/2024/09/01/2024-9-1%20Docker%E5%9F%BA%E7%A1%80/">https://oyy0v0.top/2024/09/01/2024-9-1%20Docker%E5%9F%BA%E7%A1%80/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://oyy0v0.top" target="_blank">oyy0v0😼</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Docker/">-Docker</a></div><div class="post_share"><div class="social-share" data-image="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/4.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/11/26/2024-11-22%20%E9%9D%A2%E8%AF%95/" title="面试集合"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/21.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">面试集合</div></div></a></div><div class="next-post pull-right"><a href="/2024/08/29/2024-8-29%20Solr/" title="Solr"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/5.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Solr</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/7.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">oyy0v0</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">41</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">32</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/oyy0v0"><i class="fab fa-github"></i><span>💕前往小家</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="/assets/QRCode.jpg" target="_blank" title="icon-weixin"><i class="微信" style="color: faa-tada;"></i></a><a class="social-icon" href="https://github.com/oyy0v0" target="_blank" title="icon-github"><i class="Github" style="color: faa-tade;"></i></a><a class="social-icon" href="mailto:2925886492@qq.com" target="_blank" title="icon-youxiang"><i class="QQ邮箱" style="color: faa-tada;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来来到我的博客</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Docker"><span class="toc-text">Docker</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Docker%E7%9A%84%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%AE%89%E8%A3%85"><span class="toc-text">1.Docker的介绍与安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-Docker%E8%83%BD%E5%B9%B2%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">1.2 Docker能干什么？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-1%E4%BB%A5%E5%89%8D%E7%9A%84%E8%99%9A%E6%8B%9F%E5%8C%96%E6%8A%80%E6%9C%AF"><span class="toc-text">1.2.1以前的虚拟化技术</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-2-%E5%AE%B9%E5%99%A8%E8%99%9A%E6%8B%9F%E5%8C%96%E6%8A%80%E6%9C%AF"><span class="toc-text">1.2.2 容器虚拟化技术</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-3-%E5%AE%9E%E9%99%85%E7%9A%84%E8%BF%90%E8%A1%8C"><span class="toc-text">1.2.3 实际的运行</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E7%9B%B8%E5%85%B3%E8%B5%84%E6%BA%90"><span class="toc-text">1.3 相关资源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-Docker%E5%AE%89%E8%A3%85"><span class="toc-text">1.4 Docker安装</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-1-Docker%E5%AE%89%E8%A3%85%E7%9A%84%E5%89%8D%E6%8F%90%E7%8E%AF%E5%A2%83"><span class="toc-text">1.4.1 Docker安装的前提环境</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-2-Vagrant%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%8E%AF%E5%A2%83"><span class="toc-text">1.4.2 Vagrant虚拟机环境</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-4-3-Docker%E5%AE%89%E8%A3%85"><span class="toc-text">1.4.3 Docker安装</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5-Docker%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%84%E6%88%90"><span class="toc-text">1.5 Docker的基本组成</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-5-1-%E9%95%9C%E5%83%8F-image"><span class="toc-text">1.5.1 镜像(image)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-5-2-%E5%AE%B9%E5%99%A8-container"><span class="toc-text">1.5.2 容器(container)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-5-3-%E4%BB%93%E5%BA%93-repository"><span class="toc-text">1.5.3 仓库(repository)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-5-4-%E6%80%BB%E7%BB%93"><span class="toc-text">1.5.4 总结</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-6-%E9%98%BF%E9%87%8C%E4%BA%91%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F"><span class="toc-text">1.6 阿里云镜像加速</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-7-Docker%E5%8D%B8%E8%BD%BD"><span class="toc-text">1.7 Docker卸载</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Docker%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-text">2.Docker的常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E5%B8%AE%E5%8A%A9%E5%91%BD%E4%BB%A4"><span class="toc-text">2.1 帮助命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E9%95%9C%E5%83%8F%E5%91%BD%E4%BB%A4"><span class="toc-text">2.2 镜像命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-1-docker-images"><span class="toc-text">2.2.1 docker images</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-2-docker-search"><span class="toc-text">2.2.2 docker search</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-3-Docker-pull"><span class="toc-text">2.2.3 Docker pull</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-4-Docker-rmi"><span class="toc-text">2.2.4 Docker rmi</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E5%AE%B9%E5%99%A8%E5%91%BD%E4%BB%A4"><span class="toc-text">2.3 容器命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-1-%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%90%AF%E5%8A%A8%E5%AE%B9%E5%99%A8"><span class="toc-text">2.3.1 创建并启动容器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-2-%E5%88%97%E4%B8%BE%E8%BF%90%E8%A1%8C%E7%9A%84%E5%AE%B9%E5%99%A8"><span class="toc-text">2.3.2 列举运行的容器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-3-%E9%80%80%E5%87%BA%E5%AE%B9%E5%99%A8%E5%91%BD%E4%BB%A4"><span class="toc-text">2.3.3 退出容器命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-4-%E5%90%AF%E5%8A%A8%E5%AE%B9%E5%99%A8"><span class="toc-text">2.3.4 启动容器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-5-%E9%87%8D%E5%90%AF%E5%AE%B9%E5%99%A8"><span class="toc-text">2.3.5 重启容器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-6-%E5%81%9C%E6%AD%A2%E5%AE%B9%E5%99%A8"><span class="toc-text">2.3.6 停止容器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-7-%E5%88%A0%E9%99%A4%E5%AE%B9%E5%99%A8"><span class="toc-text">2.3.7 删除容器</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4"><span class="toc-text">2.4 其他命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4-1-%E5%AE%88%E6%8A%A4%E5%BC%8F%E5%AE%B9%E5%99%A8"><span class="toc-text">2.4.1 守护式容器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4-2-%E6%9F%A5%E7%9C%8B%E5%AE%B9%E5%99%A8%E7%BB%86%E8%8A%82"><span class="toc-text">2.4.2 查看容器细节</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4-3-%E8%BF%9B%E5%85%A5%E8%BF%90%E8%A1%8C%E7%9A%84%E5%AE%B9%E5%99%A8"><span class="toc-text">2.4.3 进入运行的容器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-4-4-%E6%96%87%E4%BB%B6%E5%A4%8D%E5%88%B6"><span class="toc-text">2.4.4 文件复制</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Docker%E9%95%9C%E5%83%8F%E6%96%87%E4%BB%B6%E4%BB%8B%E7%BB%8D"><span class="toc-text">3.Docker镜像文件介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E9%95%9C%E5%83%8F%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">3.1 镜像是什么</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-1-UnionFS"><span class="toc-text">3.1.1 UnionFS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-2-%E9%95%9C%E5%83%8F%E5%8A%A0%E8%BD%BD%E5%8E%9F%E7%90%86"><span class="toc-text">3.1.2 镜像加载原理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-3-%E5%88%86%E5%B1%82%E7%9A%84%E9%95%9C%E5%83%8F"><span class="toc-text">3.1.3 分层的镜像</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-4-%E5%88%86%E5%B1%82%E7%BB%93%E6%9E%84%E7%9A%84%E7%89%B9%E7%82%B9"><span class="toc-text">3.1.4 分层结构的特点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E9%95%9C%E5%83%8F%E7%9A%84%E7%89%B9%E7%82%B9"><span class="toc-text">3.2 镜像的特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E9%95%9C%E5%83%8F%E6%93%8D%E4%BD%9C"><span class="toc-text">3.3 镜像操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-1-%E4%B8%8B%E8%BD%BDtomcat%E9%95%9C%E5%83%8F"><span class="toc-text">3.3.1 下载tomcat镜像</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-2-%E5%88%9B%E5%BB%BA%E5%AE%B9%E5%99%A8%E5%B9%B6%E5%90%AF%E5%8A%A8"><span class="toc-text">3.3.2 创建容器并启动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-3-%E4%BF%AE%E6%94%B9%E5%AE%B9%E5%99%A8"><span class="toc-text">3.3.3 修改容器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-4-%E5%88%9B%E5%BB%BA%E9%95%9C%E5%83%8F"><span class="toc-text">3.3.4 创建镜像</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-5-%E5%90%AF%E5%8A%A8%E6%96%B0%E7%9A%84%E9%95%9C%E5%83%8F"><span class="toc-text">3.3.5 启动新的镜像</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Docker%E6%95%B0%E6%8D%AE%E5%8D%B7"><span class="toc-text">4.Docker数据卷</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E6%95%B0%E6%8D%AE%E5%8D%B7"><span class="toc-text">4.1 数据卷</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-1-%E6%95%B0%E6%8D%AE%E5%8D%B7%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-text">4.1.1 数据卷是什么</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-2-%E8%A7%A3%E5%86%B3%E4%BA%86%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98"><span class="toc-text">4.1.2 解决了什么问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-3-%E6%95%B0%E6%8D%AE%E5%8D%B7%E4%BD%BF%E7%94%A8"><span class="toc-text">4.1.3 数据卷使用</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#4-1-3-1-%E7%9B%B4%E6%8E%A5%E6%B7%BB%E5%8A%A0"><span class="toc-text">4.1.3.1 直接添加</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-1-3-2-DockerFiler%E6%B7%BB%E5%8A%A0"><span class="toc-text">4.1.3.2 DockerFiler添加</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E6%95%B0%E6%8D%AE%E5%8D%B7%E5%AE%B9%E5%99%A8"><span class="toc-text">4.2 数据卷容器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-1-%E5%90%AF%E5%8A%A8%E4%B8%80%E4%B8%AA%E7%88%B6%E5%AE%B9%E5%99%A8"><span class="toc-text">4.2.1 启动一个父容器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-2-%E5%88%9B%E5%BB%BA%E4%B8%A4%E4%B8%AA%E5%AD%90%E5%AE%B9%E5%99%A8"><span class="toc-text">4.2.2 创建两个子容器</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-DockerFile"><span class="toc-text">5 DockerFile</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-DockerFile%E4%BB%8B%E7%BB%8D"><span class="toc-text">5.1 DockerFile介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#5-1-1-%E6%9E%84%E5%BB%BA%E8%BF%87%E7%A8%8B"><span class="toc-text">5.1.1. 构建过程</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-1-2-%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B"><span class="toc-text">5.1.2 执行流程</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-DockerFile%E6%A1%88%E4%BE%8B"><span class="toc-text">5.2 DockerFile案例</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-1-Base%E9%95%9C%E5%83%8F"><span class="toc-text">5.2.1 Base镜像</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-2-%E8%87%AA%E5%AE%9A%E4%B9%89%E9%95%9C%E5%83%8Fmycentos"><span class="toc-text">5.2.2 自定义镜像mycentos</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#5-2-2-1-%E7%BC%96%E5%86%99"><span class="toc-text">5.2.2.1 编写</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-2-2-2-%E6%9E%84%E5%BB%BA"><span class="toc-text">5.2.2.2 构建</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-2-2-3-%E8%BF%90%E8%A1%8C"><span class="toc-text">5.2.2.3 运行</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-2-2-4-%E9%95%9C%E5%83%8F%E5%8E%86%E5%8F%B2"><span class="toc-text">5.2.2.4 镜像历史</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-3-CMD-ENTRYPOINT%E6%A1%88%E4%BE%8B"><span class="toc-text">5.2.3.CMD&#x2F;ENTRYPOINT案例</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#5-2-3-1-CMD"><span class="toc-text">5.2.3.1 CMD</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-2-3-2-ENTRYPOINT"><span class="toc-text">5.2.3.2 ENTRYPOINT</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-4-%E8%87%AA%E5%AE%9A%E4%B9%89Tomcat"><span class="toc-text">5.2.4.自定义Tomcat</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#5-2-4-1-%E5%88%9B%E5%BB%BA%E4%B8%AAtomcat%E7%9B%AE%E5%BD%95"><span class="toc-text">5.2.4.1 创建个tomcat目录</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-2-4-2-%E6%B7%BB%E5%8A%A0%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6"><span class="toc-text">5.2.4.2 添加一个文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-2-4-3-%E6%8B%B7%E8%B4%9D%E7%9B%B8%E5%85%B3%E8%BD%AF%E4%BB%B6"><span class="toc-text">5.2.4.3 拷贝相关软件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-2-4-4-%E5%88%9B%E5%BB%BADockerfile%E6%96%87%E4%BB%B6"><span class="toc-text">5.2.4.4 创建Dockerfile文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-2-4-5-%E6%9E%84%E5%BB%BA"><span class="toc-text">5.2.4.5 构建</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-2-4-6-run"><span class="toc-text">5.2.4.6 run</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-2-4-7-%E9%AA%8C%E8%AF%81"><span class="toc-text">5.2.4.7 验证</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-2-4-8-%E9%83%A8%E7%BD%B2web%E9%A1%B9%E7%9B%AE"><span class="toc-text">5.2.4.8 部署web项目</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#5-2-4-8-1-web-xml%E6%96%87%E4%BB%B6"><span class="toc-text">5.2.4.8.1 web.xml文件</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5-2-4-8-2-index-jsp%E6%96%87%E4%BB%B6"><span class="toc-text">5.2.4.8.2 index.jsp文件</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5-2-4-8-3-%E9%87%8D%E5%90%AF%E5%AE%B9%E5%99%A8%E8%AE%BF%E9%97%AE%E5%8D%B3%E5%8F%AF"><span class="toc-text">5.2.4.8.3 重启容器访问即可</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2025 By oyy0v0</div><div class="footer_custom_text">I wish you to become your own sun, no need to rely on who's light.</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="/js/tw_cn.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.8/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(() => {
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.oyy0v0.top/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.oyy0v0.top/',
+      region: '',
+      onCommentLoaded: () => {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') setTimeout(init,0)
+    else getScript('https://cdn.jsdelivr.net/npm/twikoo@1.6.31/dist/twikoo.all.min.js').then(init)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script></div><canvas id="universe"></canvas><script defer src="/js/universe.js"></script><script defer src="/js/cursor.js"></script><script async src="//at.alicdn.com/t/c/font_4658720_723un29n3vn.js"></script><script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/js/cat.js"></script><script defer data-pjax src="/js/readPercent.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div><!-- hexo injector body_end start --><script data-pjax>
+    function butterfly_categories_card_injector_config(){
+      var parent_div_git = document.getElementById('recent-posts');
+      var item_html = '<style>li.categoryBar-list-item{width:32.3%;}.categoryBar-list{max-height: 190px;overflow:auto;}.categoryBar-list::-webkit-scrollbar{width:0!important}@media screen and (max-width: 650px){.categoryBar-list{max-height: 160px;}}</style><div class="recent-post-item" style="height:auto;width:100%;padding:0px;"><div id="categoryBar"><ul class="categoryBar-list"><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/18.jpg);"> <a class="categoryBar-list-link" href="categories/java入门/">java入门</a><span class="categoryBar-list-count">5</span><span class="categoryBar-list-descr">java入门</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/17.jpg);"> <a class="categoryBar-list-link" href="categories/算法/">算法</a><span class="categoryBar-list-count">7</span><span class="categoryBar-list-descr">算法</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/15.jpg);"> <a class="categoryBar-list-link" href="categories/博客/">博客</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">博客</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/14.jpg);"> <a class="categoryBar-list-link" href="categories/GitHub/">GitHub</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">AI</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/13.jpg);"> <a class="categoryBar-list-link" href="categories/java高级/">java高级</a><span class="categoryBar-list-count">9</span><span class="categoryBar-list-descr">前端</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/12.jpg);"> <a class="categoryBar-list-link" href="categories/前端/">前端</a><span class="categoryBar-list-count">3</span><span class="categoryBar-list-descr">GitHub</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/11.jpg);"> <a class="categoryBar-list-link" href="categories/AI/">AI</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">java高级</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/10.jpg);"> <a class="categoryBar-list-link" href="categories/面试集合/">面试集合</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">面试集合</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/2.jpg);"> <a class="categoryBar-list-link" href="categories/面试/">面试</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">Go语言</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20.jpg);"> <a class="categoryBar-list-link" href="categories/Go语言/">Go语言</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">面试</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/21.jpg);"> <a class="categoryBar-list-link" href="categories/计算机网络/">计算机网络</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">操作系统</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/22.jpg);"> <a class="categoryBar-list-link" href="categories/操作系统/">操作系统</a><span class="categoryBar-list-count">2</span><span class="categoryBar-list-descr">计算机网络</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/23.jpg);"> <a class="categoryBar-list-link" href="categories/java中级/">java中级</a><span class="categoryBar-list-count">5</span><span class="categoryBar-list-descr">java中级</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/9.jpg);"> <a class="categoryBar-list-link" href="categories/java思路/">java思路</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">java小记</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/3.jpg);"> <a class="categoryBar-list-link" href="categories/java踩坑/">java踩坑</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">java踩坑</span></li><li class="categoryBar-list-item" style="background:url(https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/23.jpg);"> <a class="categoryBar-list-link" href="categories/java小记/">java小记</a><span class="categoryBar-list-count">1</span><span class="categoryBar-list-descr">java思路</span></li></ul></div></div>';
+      console.log('已挂载butterfly_categories_card')
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      }
+    if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    butterfly_categories_card_injector_config()
+    }
+  </script><script data-pjax>
+  function butterfly_clock_anzhiyu_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock_anzhiyu')
+    if(parent_div_git) {
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var qweather_key = '8b4e8faa226f49ff851d67d0354499b7';
+  var gaud_map_key = '85e43a6ba1ebb38fd12b0d8a886ecb9b';
+  var baidu_ak_key = 'undefined';
+  var flag = 0;
+  var clock_rectangle = '113.34532,23.15624';
+  var clock_default_rectangle_enable = 'false';
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  </script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script data-pjax src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js"></script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v6.2.0" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="主题版本Butterfly_v4.3.1" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" data-title="本站采用多线部署，主线路托管于Vercel" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&amp;logo=Vercel" alt=""/></a><a class="github-badge" target="_blank" href="https://dashboard.4everland.org/" style="margin-inline:5px" data-title="本站采用多线部署，备用线路托管于4EVERLAND" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-4EVERLAND-22DDDD?style=flat&amp;logo=IPFS" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="/js/runtime.js"></script><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/09/01/2024-9-1 Docker基础/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/4.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-09-01</span><a class="blog-slider__title" href="2024/09/01/2024-9-1 Docker基础/" alt="">Docker</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/09/01/2024-9-1 Docker基础/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/08/29/2024-8-29 Solr/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/5.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-08-29</span><a class="blog-slider__title" href="2024/08/29/2024-8-29 Solr/" alt="">Solr</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/08/29/2024-8-29 Solr/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/08/24/2024-8-24 虚拟机VMware/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/2.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-08-24</span><a class="blog-slider__title" href="2024/08/24/2024-8-24 虚拟机VMware/" alt="">虚拟机</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/08/24/2024-8-24 虚拟机VMware/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/11/26/2024-11-22 面试/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/21.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-11-26</span><a class="blog-slider__title" href="2024/11/26/2024-11-22 面试/" alt="">面试集合</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/11/26/2024-11-22 面试/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/11/26/2024-11-26设计模式/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/14.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-11-26</span><a class="blog-slider__title" href="2024/11/26/2024-11-26设计模式/" alt="">设计模式</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/11/26/2024-11-26设计模式/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/03/11/2025-3-22 开发流程化/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/15.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-11</span><a class="blog-slider__title" href="2025/03/11/2025-3-22 开发流程化/" alt="">开发流程化</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/03/11/2025-3-22 开发流程化/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/03/11/2025-3-14 JSP/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-11</span><a class="blog-slider__title" href="2025/03/11/2025-3-14 JSP/" alt="">JSP</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/03/11/2025-3-14 JSP/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/03/11/2025-3-14 Servlet入门/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/12.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-11</span><a class="blog-slider__title" href="2025/03/11/2025-3-14 Servlet入门/" alt="">Servlet入门</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/03/11/2025-3-14 Servlet入门/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/03/11/2025-3-14  Servlet进阶/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231208202901.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-11</span><a class="blog-slider__title" href="2025/03/11/2025-3-14  Servlet进阶/" alt="">Servlet进阶</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/03/11/2025-3-14  Servlet进阶/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/03/11/2025-3-12 常用注解/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/10.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-11</span><a class="blog-slider__title" href="2025/03/11/2025-3-12 常用注解/" alt="">常用注解</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/03/11/2025-3-12 常用注解/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/08/07/2024-8-7 Springboot/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/15.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-08-07</span><a class="blog-slider__title" href="2024/08/07/2024-8-7 Springboot/" alt="">Springboot</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/08/07/2024-8-7 Springboot/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/03/11/2025-3-11 Maven实战/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/20.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-11</span><a class="blog-slider__title" href="2025/03/11/2025-3-11 Maven实战/" alt="">Maven</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/03/11/2025-3-11 Maven实战/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/08/07/2024-8-7 踩坑记录/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/13.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-08-07</span><a class="blog-slider__title" href="2024/08/07/2024-8-7 踩坑记录/" alt="">踩坑记录</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/08/07/2024-8-7 踩坑记录/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/08/23/2024-8-23 Nginx和lua和Openresty高性能实践/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/11.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-08-23</span><a class="blog-slider__title" href="2024/08/23/2024-8-23 Nginx和lua和Openresty高性能实践/" alt="">Nginx+lua+OpenResty高性能实践</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/08/23/2024-8-23 Nginx和lua和Openresty高性能实践/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/08/07/2024-8-9 固定思路详解/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/4.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-08-07</span><a class="blog-slider__title" href="2024/08/07/2024-8-9 固定思路详解/" alt="">固定思路详解</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/08/07/2024-8-9 固定思路详解/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/08/23/2024-8-23 redis/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/9.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-08-23</span><a class="blog-slider__title" href="2024/08/23/2024-8-23 redis/" alt="">redis</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/08/23/2024-8-23 redis/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/07/20/2024-7-20 Mybatis/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/2.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-07-20</span><a class="blog-slider__title" href="2024/07/20/2024-7-20 Mybatis/" alt="">Mybatis</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/07/20/2024-7-20 Mybatis/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/08/16/2024-8-16 前端速通/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/6.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-08-16</span><a class="blog-slider__title" href="2024/08/16/2024-8-16 前端速通/" alt="">前端速通</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/08/16/2024-8-16 前端速通/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/08/14/2024-8-14 Dubbo/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/22.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-08-14</span><a class="blog-slider__title" href="2024/08/14/2024-8-14 Dubbo/" alt="">Dubbo</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/08/14/2024-8-14 Dubbo/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/08/14/2024-8-14 RPC远程服务调用/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/17.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-08-14</span><a class="blog-slider__title" href="2024/08/14/2024-8-14 RPC远程服务调用/" alt="">RPC远程服务调用</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/08/14/2024-8-14 RPC远程服务调用/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/06/24/2025-6-24 算法合集/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/8.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-06-24</span><a class="blog-slider__title" href="2025/06/24/2025-6-24 算法合集/" alt="">算法合集</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/06/24/2025-6-24 算法合集/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/03/10/2025-3-9 队列和栈/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/4.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-10</span><a class="blog-slider__title" href="2025/03/10/2025-3-9 队列和栈/" alt="">队列和栈</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/03/10/2025-3-9 队列和栈/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/03/02/2025-3-2 链表/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/21.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-02</span><a class="blog-slider__title" href="2025/03/02/2025-3-2 链表/" alt="">链表</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/03/02/2025-3-2 链表/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/03/11/2025-3-11 算法问题合集/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/6.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-11</span><a class="blog-slider__title" href="2025/03/11/2025-3-11 算法问题合集/" alt="">算法问题合集</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/03/11/2025-3-11 算法问题合集/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/02/23/2025-2-23 数组和字符串（算法）/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/2.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-02-23</span><a class="blog-slider__title" href="2025/02/23/2025-2-23 数组和字符串（算法）/" alt="">数组和字符串（算法）</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/02/23/2025-2-23 数组和字符串（算法）/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2025/03/02/2025-2-25 java8新特性/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/6.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2025-03-02</span><a class="blog-slider__title" href="2025/03/02/2025-2-25 java8新特性/" alt="">java8新特性</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2025/03/02/2025-2-25 java8新特性/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/07/13/2024-7-2 Vue2/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/5.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-07-13</span><a class="blog-slider__title" href="2024/07/13/2024-7-2 Vue2/" alt="">Vue2</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/07/13/2024-7-2 Vue2/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/04/18/2024-4-20 操作系统/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/8.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-04-18</span><a class="blog-slider__title" href="2024/04/18/2024-4-20 操作系统/" alt="">操作系统</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/04/18/2024-4-20 操作系统/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/05/14/2024-4-29 计算机网络/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/3.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-05-14</span><a class="blog-slider__title" href="2024/05/14/2024-4-29 计算机网络/" alt="">计算机网络</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/05/14/2024-4-29 计算机网络/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/04/28/2024-4-28 go语言/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/3.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-04-28</span><a class="blog-slider__title" href="2024/04/28/2024-4-28 go语言/" alt="">Go语言</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/04/28/2024-4-28 go语言/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/04/15/2024-4-6 面试题刷题/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/23.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-04-15</span><a class="blog-slider__title" href="2024/04/15/2024-4-6 面试题刷题/" alt="">面试刷题</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/04/15/2024-4-6 面试题刷题/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/04/18/2024-4-18 JDBC/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/8.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-04-18</span><a class="blog-slider__title" href="2024/04/18/2024-4-18 JDBC/" alt="">JDBC</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/04/18/2024-4-18 JDBC/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2024/04/15/2024-4-15 数据库/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/22.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2024-04-15</span><a class="blog-slider__title" href="2024/04/15/2024-4-15 数据库/" alt="">数据库</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2024/04/15/2024-4-15 数据库/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/07/06/2023-7-1Java小记/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231208202901.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-07-06</span><a class="blog-slider__title" href="2023/07/06/2023-7-1Java小记/" alt="">Java小记</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2023/07/06/2023-7-1Java小记/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/08/15/2023-8-15 AI夏令营天气预报大赛/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/8.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-08-15</span><a class="blog-slider__title" href="2023/08/15/2023-8-15 AI夏令营天气预报大赛/" alt="">AI夏令营天气预报大赛</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2023/08/15/2023-8-15 AI夏令营天气预报大赛/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/12/18/2023-12-18 前端小记/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/6.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-12-18</span><a class="blog-slider__title" href="2023/12/18/2023-12-18 前端小记/" alt="">前端小记</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2023/12/18/2023-12-18 前端小记/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/06/23/2023-6-24Git和Github使用教程/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20231208202901.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-06-23</span><a class="blog-slider__title" href="2023/06/23/2023-6-24Git和Github使用教程/" alt="">Git和Github使用教程</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2023/06/23/2023-6-24Git和Github使用教程/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/12/12/2023-12-11 建立博客保姆教程（1）/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/2.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-12-12</span><a class="blog-slider__title" href="2023/12/12/2023-12-11 建立博客保姆教程（1）/" alt="">建立博客</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2023/12/12/2023-12-11 建立博客保姆教程（1）/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/05/08/2023-5-8哈希表和有序表/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/21.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-05-08</span><a class="blog-slider__title" href="2023/05/08/2023-5-8哈希表和有序表/" alt="">哈希表和有序表</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2023/05/08/2023-5-8哈希表和有序表/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2023/08/15/2023-10-3背包问题/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/11.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-08-15</span><a class="blog-slider__title" href="2023/08/15/2023-10-3背包问题/" alt="">背包问题</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2023/08/15/2023-10-3背包问题/" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="2022/11/27/2022-11-27 枚举类/" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oyy0v0pic.oss-cn-guangzhou.aliyuncs.com/14.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-11-27</span><a class="blog-slider__title" href="2022/11/27/2022-11-27 枚举类/" alt="">javase入门（枚举1）</a><div class="blog-slider__text">知识分享</div><a class="blog-slider__button" href="2022/11/27/2022-11-27 枚举类/" alt="">详情   </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><script data-pjax src="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js"></script><script data-pjax>
+  function gitcalendar_injector_config(){
+      var parent_div_git = document.getElementById('gitZone');
+      var item_html = '<div class="recent-post-item" id="gitcalendarBar" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 280px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      console.log('已挂载gitcalendar')
+      }
+
+    if( document.getElementById('gitZone') && (location.pathname ==='/about/'|| '/about/' ==='all')){
+        gitcalendar_injector_config()
+        GitCalendarInit("https://github-api.oyy0v0.top//api?oyy0v0",['#d9e0df', '#c6e0dc', '#a8dcd4', '#9adcd2', '#89ded1', '#77e0d0', '#5fdecb', '#47dcc6', '#39dcc3', '#1fdabe', '#00dab9'],'oyy0v0')
+    }
+  </script><!-- hexo injector body_end end --></body></html>
